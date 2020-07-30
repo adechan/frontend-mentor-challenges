@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./styles.css">
+  
+  <title>Frontend Mentor | Fylo data storage component</title>
+
+</head>
+<body>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Ade</a>.
+  </div>
+
+  <div class="wrapper">
+    <!-- Left Side -->
+    <div class="left">
+
+      <div class="title-wrapper">
+          <img src="./images/logo.png" alt="" class="title">
+      </div>
+
+      <div class="icon-wrapper">
+          <div class="icon1">
+            <img class="icon" src="./images/icon-document.svg" alt="">
+          </div>
+
+          <div class="icon2">
+            <img class="icon" src="./images/icon-folder.svg" alt="">
+          </div>
+
+          <div class="icon3">
+            <img class="icon" src="./images/icon-upload.svg" alt="">
+          </div>
+      </div>
+      
+    </div>
+    <!-- End of Left Side -->
+
+    <!-- Right Side -->
+    <div class="right">
+
+      <div class="slider-value">
+        <p class="text">You've used <span>815 GB</span> of your storage</p>
+      </div>
+
+      <div class="field">
+        <!-- Changing the background colour through JS -->
+        <input id="myinput" type="range" min="0" max="1000"value="815" steps="1">
+
+        <div class="values">   
+          <div class="value-left">0 GB</div>
+          <div class="value-right">1000 GB</div>
+        </div>
+      </div>
+      
+      <div class="remainder-gb">
+        <p class="remainder-text">
+          <span class="value">185</span> 
+          <span class="text">GB LEFT</span>
+        </p>
+      </div>
+
+      <div class="triangle"></div>
+
+    </div>
+    <!-- End of Right Side -->
+    
+  </div>
+
+  <script>
+  document.getElementById("myinput").oninput = function() {
+  this.style.background = 'linear-gradient(to right, hsl(6, 100%, 80%) 0%, hsl(335, 100%, 65%)' 
+  + (((this.value - this.min)/(this.max - this.min) * 100)) + '%, #0c122c ' 
+  + (((this.value - this.min)/(this.max - this.min) * 100))+ '%, #0c122c 100%)'};
+
+  </script>
+
+</body>
+</html>

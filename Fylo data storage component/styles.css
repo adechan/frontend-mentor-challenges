@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: "Raleway", sans-serif;
+    background: #0c122c;
+
+    
+    background-image: url("../images/bg-desktop.png");
+    background-repeat: no-repeat;
+    /* background-position: center bottom; */
+    /* background-position: 0px 340px; */
+    background-position: 0% 120%;
+    
+}
+
+.attribution {
+    padding-top: 3px;
+    font-size: 11px;
+    text-align: center;
+    background: #1D2C67;
+    color: white;
+    height: 20px;
+}
+
+.attribution a {
+    color: #DDDBFF;
+    text-decoration: none;
+}
+
+.wrapper {
+    /* To center it  */
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    width: 70vw;
+    height: 30vh;
+
+    background-position: 100% 0;
+    background-size:50%;
+    background-repeat:no-repeat;
+
+    display: flex;
+    flex-direction: row;
+    
+    justify-content: space-between;
+
+    /* Center vertically  */
+    /* align-items: center; */
+}
+
+.wrapper .left {
+    background: pink;
+    border-top-right-radius: 100px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+
+    width: 370px;
+    height: 100%;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-left: 50px;
+
+    background: #1D2C67;
+}
+
+.wrapper .left .icon-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 170px;
+}
+
+.icon-wrapper .icon1, .icon2, .icon3 {
+    background: #0C122C;
+    border-radius: 5px;
+    width: 40px; 
+    height: 43px;
+
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    align-self: flex-start;
+}
+
+.icon-wrapper .icon {
+    cursor: pointer;
+}
+
+
+.wrapper .right {
+    font-size: 14px;
+    color: #c1c4d4;
+    border-radius: 10px;
+    width: 580px;
+    height: 70%;
+
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+
+    padding-left: 50px;
+    padding-right: 50px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    background:  #1D2C67;
+}
+
+.wrapper .right .remainder-gb {
+
+    /* Align text in center */
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+
+    position: absolute;
+    border-radius: 6px;
+
+    width: 160px;
+    height: 60px;
+    background: white;
+
+    margin-top: -160px;
+    right: 50px;
+    font-weight: 700;
+    font-size: 12px;
+
+}
+
+.wrapper .right .triangle {
+    position: absolute;
+    right: 50px;
+    margin-top: -85px;
+
+    width: 0;
+    height: 0;
+    border-top: 27px solid white;
+    border-left: 27px solid transparent;
+
+}
+
+.wrapper .right .remainder-gb .value {
+    font-size: 30px;
+    font-weight: 700;
+    color: black;
+}
+
+.wrapper .right .remainder-gb .text {
+    /* To align the "gb left" in center */
+    vertical-align: super;
+}
+
+.field .value-left, .value-right {
+    color: white;
+    font-weight: 700;
+}
+
+.slider-value span {
+    color: white;
+    font-weight: 700;
+}
+
+
+.right input {
+    width: 100%;
+    background: #0c122c;
+    -webkit-appearance: none;
+    border-radius: 10px;
+    border: 1px solid #0c122c;
+    outline: none;
+    overflow: hidden;
+    background: linear-gradient(to right, hsl(6, 100%, 80%) 0%, hsl(335, 100%, 65%) 80%, #0c122c 80%, #0c122c 100%);
+    
+}
+
+/*Styling the thumb */ 
+/* Chrome */
+.right input::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: white;
+    border: 1px solid #664AFF;
+    cursor: pointer;
+}
+
+/* Mozilla */
+.right input::-moz-range-thumb{
+  -webkit-appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: white;
+  border: 1px solid #664AFF;
+  cursor: pointer;
+}
+/*End of Styling the thumb */
+
+.field .values {
+    padding-top: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.slider-value .text {
+    padding-bottom: 10px;
+}
+
