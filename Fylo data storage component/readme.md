@@ -10,8 +10,7 @@ My solution: ![solution1](https://user-images.githubusercontent.com/29714385/890
 
 ## Mobile design
 Original: 
-#
 ![mobile-design](https://user-images.githubusercontent.com/29714385/89038957-f1bd2680-d349-11ea-93c4-f64eacb6d481.jpg)
-My solution: 
 #
+My solution: 
 ![solution1](https://user-images.githubusercontent.com/29714385/89038636-6479d200-d349-11ea-859c-7dbe11ef07bc.PNG)
