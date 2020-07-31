@@ -14,6 +14,7 @@ html, body {
     
     background-image: url("../images/bg-desktop.png");
     background-repeat: no-repeat;
+    background-size: 100vw 60vh;
 
     /* background-position: center bottom; */
     /* background-position: 0px 340px; */
@@ -61,7 +62,6 @@ html, body {
 }
 
 .wrapper .left {
-    background: pink;
     border-top-right-radius: 100px;
     border-top-left-radius: 10px;
     border-bottom-right-radius: 10px;
@@ -81,15 +81,18 @@ html, body {
 .wrapper .left .icon-wrapper {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    margin-right: 170px;
+
+    justify-content: start;
 }
 
 .icon-wrapper .icon1, .icon2, .icon3 {
+
+    margin-right: 10px;
+
     background: #0C122C;
     border-radius: 5px;
-    width: 40px; 
-    height: 43px;
+    width: 50px; 
+    height: 55px;
 
     display: flex; 
     justify-content: center;
@@ -97,10 +100,20 @@ html, body {
     align-self: flex-start;
 }
 
-.icon-wrapper .icon {
-    cursor: pointer;
+.iconc {
+    width: 40px;
 }
 
+.icon-wrapper .icona, .iconb, .iconc {
+    display: block;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 5px;    
+}
+
+.icon-wrapper .icona, .iconb, .iconc {
+    cursor: pointer;
+}
 
 .wrapper .right {
     font-size: 14px;
@@ -161,6 +174,10 @@ html, body {
     font-size: 30px;
     font-weight: 700;
     color: black;
+}
+
+.wrapper .right .remainder-gb .text {
+    color: grey;
 }
 
 .wrapper .right .remainder-gb .text {
@@ -236,10 +253,6 @@ html, body {
     .wrapper .right {
         width: 47%;
     }
-
-    .wrapper .left .icon-wrapper {
-        margin-right: 180px;
-    }
 }
 
 @media(max-width: 1100px){
@@ -247,20 +260,13 @@ html, body {
     width: 90vw;
     height: 30vh;
     }
-
-    .wrapper .left .icon-wrapper {
-        margin-right: 180px;
-    }
 }
 
 @media(max-width: 890px){
-    .wrapper .left .icon-wrapper {
-        margin-right: 300px;
-    }
 
     .icon-wrapper .icon1, .icon2, .icon3{
-        width: 50px;
-        height: 55px;
+        width: 43px;
+        height: 45px;
     }
 
     .wrapper {
@@ -286,13 +292,9 @@ html, body {
 
 @media (max-width: 729px) {
 
-    .wrapper .left .icon-wrapper {
-        margin-right: 140px;
-    }
-
     .icon-wrapper .icon1, .icon2, .icon3{
-        width: 50px;
-        height: 55px;
+        width: 43px;
+        height: 45px;
     }
 
     .wrapper {
@@ -312,18 +314,22 @@ html, body {
     .wrapper .right {
         height: 25vh;
         width: 80vw;
+        
+        position: relative;
     }
 
     .wrapper .right .remainder-gb {
-        margin: 0; 
-        bottom:0px; 
-        
-        right:60%;
-        left:60%;
+        position: absolute;
+        left: 50%;
+        bottom: 0px;
         margin-bottom: -30px;
-        margin-left: -150px;
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
 
-        /* width: 25vw; */
+        max-width: 160px;
+        width: 35vw;
+        min-width: 115px;
+
     }
 
     .wrapper .right .triangle {
@@ -332,10 +338,43 @@ html, body {
 
 }
 
-@media(max-width: 380px){
-    .wrapper .left .icon-wrapper {
-        margin-right: 110px;
+@media(max-width: 500px)
+{
+    html, body {
+        background-image: url("../images/bg-mobile.png");
+        background-repeat: no-repeat;
+    
+        background-size: auto;
+        background-size: 100vw 100vh;
+
+        /* background-position: center bottom; */
+        /* background-position: 0px 340px; */
+        
     }
+}
+
+@media (max-width: 437px)
+{
+
+    .icon-wrapper .icon1, .icon2, .icon3{
+        width: 43px;
+        height: 45px;
+    }
+
+    html, body {
+        background-image: url("../images/bg-mobile.png");
+        background-repeat: no-repeat;
+    
+        background-size: auto;
+        background-size: 100vw 100vh;
+
+        /* background-position: center bottom; */
+        /* background-position: 0px 340px; */
+        
+    }
+}
+
+@media(max-width: 380px){
 
     .icon-wrapper .icon1, .icon2, .icon3{
         width: 35px;
@@ -343,15 +382,13 @@ html, body {
     }
 
     .icon-wrapper .icona, .iconb {
-        width: 15px;
+        width: 25px;
     }
 
     .icon-wrapper .iconc {
-        width: 20px;
+        width: 30px;
     }
 
-
-    
     .wrapper {
         width: 80vw;
         height: 55vh;
@@ -364,11 +401,13 @@ html, body {
     .wrapper .left {
         height: 28vh;
         width: 80vw;
+        /* padding-left: 20px; */
     }
 
     .wrapper .right {
         height: 25vh;
         width: 80vw;
+        /* padding-left: 20px; */
     }
 
 
@@ -376,20 +415,11 @@ html, body {
         background-image: url("../images/bg-mobile.png");
         background-repeat: no-repeat;
     
+        background-size: auto;
+
         /* background-position: center bottom; */
         /* background-position: 0px 340px; */
         
-    }
-
-    .wrapper .right .remainder-gb {
-        position: absolute;
-        margin: 0; 
-        bottom: 0px; 
-        
-        left: 75%;
-        margin-bottom: -30px;
-        margin-left: -150px;
-
     }
 
     .slider-value .text {
@@ -398,5 +428,90 @@ html, body {
     
     .field .values {
         font-size: 12px;
+    }
+}
+
+@media(max-width: 330px) {
+    .wrapper .right .remainder-gb {
+        margin-bottom: -16px;
+
+        max-width: 160px;
+        width: 35vw;
+        min-width: 130px;
+
+        max-height: 60px;
+        height: 10vw;
+        min-height: 40px;
+    }
+
+    .wrapper .right .remainder-gb .value {
+        font-size: 25px;
+        font-weight: 700;
+        color: black;
+    }
+}
+
+@media(max-width: 280px) {
+
+    .title-wrapper .title {
+        width: 50vw;
+    }
+
+    .icon-wrapper .icon1, .icon2, .icon3{
+        width: 28px;
+        height: 30px;
+    }
+
+    .icon-wrapper .icona, .iconb {
+        width: 25px;
+    }
+
+    .icon-wrapper .iconc {
+        width: 30px;
+    }
+
+    .wrapper .right .remainder-gb {
+        margin-bottom: -16px;
+
+        max-width: 160px;
+        width: 35vw;
+        min-width: 130px;
+
+        max-height: 60px;
+        height: 10vw;
+        min-height: 40px;
+    }
+
+    .wrapper .left {
+        padding-left: 20px;
+    }
+
+    .wrapper .right {
+        padding-left: 20px;
+    }
+}
+
+@media(max-width: 153px) {
+
+    .wrapper .left {
+        padding-left: 5px;
+    }
+
+    .wrapper .right {
+        padding-left: 5px;
+    }
+
+    .icon-wrapper .icon1, .icon2, .icon3{
+        width: 4vh;
+        height: 5vh;
+        margin-right: 4px;
+    }
+
+    .icon-wrapper .icona, .iconb {
+        width: 23px;
+    }
+
+    .icon-wrapper .iconc {
+        width: 25px;
     }
 }
