@@ -67,8 +67,8 @@ html, body {
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
 
-    min-width: 390px;
-    width: 24vw;
+    min-width: 400px;
+    width: 26vw;
     height: 100%;
     
     display: flex;
