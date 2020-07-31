@@ -212,8 +212,8 @@ html, body {
 /* Chrome */
 .right input::-webkit-slider-thumb{
     -webkit-appearance: none;
-    width: 20px;
-    height: 20px;
+    width: 15px;
+    height: 15px;
     border-radius: 50%;
     background: white;
     border: 1px solid #664AFF;
@@ -223,8 +223,8 @@ html, body {
 /* Mozilla */
 .right input::-moz-range-thumb{
   -webkit-appearance: none;
-  width: 20px;
-  height: 20px;
+  width: 15px;
+  height: 15px;
   border-radius: 50%;
   background: white;
   border: 1px solid #664AFF;
@@ -372,21 +372,32 @@ html, body {
         /* background-position: 0px 340px; */
         
     }
+
+    .wrapper .left {
+        padding-left: 30px;
+    }
+
+    .wrapper .right {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
 }
 
 @media(max-width: 380px){
 
     .icon-wrapper .icon1, .icon2, .icon3{
-        width: 35px;
-        height: 35px;
+        width: 40px;
+        height: 40px;
+        margin-left: 8px;
     }
 
     .icon-wrapper .icona, .iconb {
-        width: 25px;
+        width: 28px;
     }
 
     .icon-wrapper .iconc {
-        width: 30px;
+        width: 33px;
     }
 
     .wrapper {
@@ -401,13 +412,14 @@ html, body {
     .wrapper .left {
         height: 28vh;
         width: 80vw;
-        /* padding-left: 20px; */
+        padding-left: 30px;
     }
 
     .wrapper .right {
         height: 25vh;
         width: 80vw;
-        /* padding-left: 20px; */
+        padding-left: 30px;
+        padding-right: 30px;
     }
 
 
@@ -432,6 +444,9 @@ html, body {
 }
 
 @media(max-width: 330px) {
+
+
+
     .wrapper .right .remainder-gb {
         margin-bottom: -16px;
 
@@ -452,6 +467,21 @@ html, body {
 }
 
 @media(max-width: 280px) {
+
+    .icon-wrapper .icon1, .icon2, .icon3{
+        width: 33px;
+        height: 33px;
+        margin-right: 1px;
+    }
+
+    .icon-wrapper .icona, .iconb {
+        width: 25px;
+    }
+
+    .icon-wrapper .iconc {
+        width: 30px;
+    }
+
 
     .title-wrapper .title {
         width: 50vw;
@@ -492,6 +522,18 @@ html, body {
 }
 
 @media(max-width: 153px) {
+
+    .wrapper .right .remainder-gb {
+        margin-bottom: -16px;
+
+        max-width: 130px;
+        width: 35vw;
+        min-width: 100px;
+
+        max-height: 60px;
+        height: 10vw;
+        min-height: 40px;
+    }
 
     .wrapper .left {
         padding-left: 5px;
