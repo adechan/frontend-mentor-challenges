@@ -12,7 +12,7 @@ html, body {
     background: #0c122c;
 
     
-    background-image: url("../images/bg-desktop.png");
+    background-image: url("images/bg-desktop.png");
     background-repeat: no-repeat;
     background-size: 100vw 60vh;
 
@@ -341,7 +341,7 @@ html, body {
 @media(max-width: 500px)
 {
     html, body {
-        background-image: url("../images/bg-mobile.png");
+        background-image: url("images/bg-mobile.png");
         background-repeat: no-repeat;
     
         background-size: auto;
@@ -362,7 +362,7 @@ html, body {
     }
 
     html, body {
-        background-image: url("../images/bg-mobile.png");
+        background-image: url("images/bg-mobile.png");
         background-repeat: no-repeat;
     
         background-size: auto;
@@ -424,7 +424,7 @@ html, body {
 
 
     html, body {
-        background-image: url("../images/bg-mobile.png");
+        background-image: url("images/bg-mobile.png");
         background-repeat: no-repeat;
     
         background-size: auto;
