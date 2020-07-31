@@ -13,3 +13,6 @@ It is a **responsive** page, so it works on any device.
 **The Original Design** |**My solution**
 :-------------------------:|:-------------------------:
 ![mobile-design](https://user-images.githubusercontent.com/29714385/89050426-6ba9db80-d35b-11ea-8f5c-7e4110a46e45.jpg)  |  ![mobile1-solution](https://user-images.githubusercontent.com/29714385/89053766-61d6a700-d360-11ea-901b-6f93835b2a48.png)
+
+# Test the component
+https://adechan.github.io/Frontend-Mentor-Challenges/Fylo-Data-Storage-Component/
