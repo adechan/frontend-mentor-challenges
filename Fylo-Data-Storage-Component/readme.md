@@ -1,5 +1,5 @@
 # Fylo Data Storage Component
-I had to build the Fylo data storage component's UI and make it look as close as the original design as I can using **HTML** and **CSS**. 
+I had to build the Fylo data storage component's UI and make it look as close as the original design as I can using **HTML**, **CSS**, and **JavaScript**.
 
 It is a **responsive** page, so it works on any device. 
 
