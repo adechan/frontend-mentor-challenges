@@ -151,7 +151,7 @@ html, body {
     width: 160px;
     height: 60px;
     background: white;
-    
+
     font-weight: 700;
     font-size: 12px;
 
@@ -338,6 +338,7 @@ html, body {
 
     .wrapper .right .remainder-gb {
         position: absolute;
+        top: 100%;
         left: 50%;
         bottom: 0px;
         margin-bottom: -30px;
@@ -350,8 +351,22 @@ html, body {
 
     }
 
-    .wrapper .right .triangle {
+    
+
+    /* .wrapper .right .triangle {
         display: none;
+    } */
+
+    
+    .wrapper .right .remainder-gb:before {
+        content: "";
+        position: absolute;
+
+        right: 0px;
+        bottom: -22px;
+        border-top: 27px solid transparent;
+        border-left: 27px solid transparent;
+
     }
 
 }
