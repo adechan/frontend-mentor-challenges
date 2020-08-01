@@ -79,7 +79,9 @@
   + (((this.value - this.min)/(this.max - this.min) * 100))+ '%, #0c122c 100%)'};
 
   var slider = document.getElementById("myinput");
-  slider.onchange = function(event){
+  slider.addEventListener('input', sliderChange);
+
+  function sliderChange() {
     var output = document.getElementById("range-value");
     output.innerHTML = slider.value;
 
