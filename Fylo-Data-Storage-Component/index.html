@@ -45,12 +45,12 @@
     <div class="right">
 
       <div class="slider-value">
-        <p class="text">You've used <span>815 GB</span> of your storage</p>
+        <p class="text">You've used <span id = "range-value">815 GB</span> of your storage</p>
       </div>
 
       <div class="field">
         <!-- Changing the background colour through JS -->
-        <input id="myinput" type="range" min="0" max="1000"value="815" steps="1">
+        <input id="myinput" type="range" min="0" max="1000" value="815" steps="1">
 
         <div class="values">   
           <div class="value-left">0 GB</div>
@@ -60,7 +60,7 @@
       
       <div class="remainder-gb">
         <p class="remainder-text">
-          <span class="value">185</span> 
+          <span id="gb-left" class="value">185</span> 
           <span class="text">GB LEFT</span>
         </p>
       </div>
@@ -77,6 +77,15 @@
   this.style.background = 'linear-gradient(to right, hsl(6, 100%, 80%) 0%, hsl(335, 100%, 65%)' 
   + (((this.value - this.min)/(this.max - this.min) * 100)) + '%, #0c122c ' 
   + (((this.value - this.min)/(this.max - this.min) * 100))+ '%, #0c122c 100%)'};
+
+  var slider = document.getElementById("myinput");
+  slider.onchange = function(event){
+    var output = document.getElementById("range-value");
+    output.innerHTML = slider.value;
+
+    var gbLeft = document.getElementById("gb-left");
+    gbLeft.innerHTML = parseInt(this.max) - parseInt(slider.value);
+  }
 
   </script>
 
