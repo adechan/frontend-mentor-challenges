@@ -145,21 +145,18 @@ html, body {
     justify-content: center; 
     align-items: center;
 
-    /* position: absolute; */
+    position: absolute;
     border-radius: 6px;
 
     width: 160px;
     height: 60px;
     background: white;
-
-    /* margin-top: -160px; */
     
-    right: 50px;
     font-weight: 700;
     font-size: 12px;
 
-    position: absolute;
-    left: 73%;
+    /* left: 73%; */
+    right: -25px;
     top: 0px;
     margin-top: -35px;
     -webkit-transform: translateX(-50%);
