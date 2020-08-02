@@ -36,6 +36,7 @@ html, body {
     text-decoration: none;
 }
 
+/* Styles for the wrapper */
 .wrapper {
     /* To center it  */
     position: absolute;
@@ -54,20 +55,16 @@ html, body {
 
     display: flex;
     flex-direction: row;
-    
     justify-content: space-between;
-
-    /* Center vertically  */
-    /* align-items: center; */
 }
 
+/* Styles for the left box */
 .wrapper .left {
     border-top-right-radius: 100px;
     border-top-left-radius: 10px;
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
 
-    /* min-width: 350px; */
     width: 27vw;
     height: 100%;
     
@@ -82,17 +79,20 @@ html, body {
 .wrapper .left .icon-wrapper {
     display: flex;
     flex-direction: row;
-
     justify-content: start;
 }
 
+/* Styles for the icon's box
+   The icons should be placed in the middle of the little box 
+*/
 .icon-wrapper .icon1, .icon2, .icon3 {
 
+    /* To have space between the boxes */
     margin-right: 10px;
 
     background: #0C122C;
-    border-radius: 5px;
-    width: 50px; 
+    border-radius: 10px;
+    width: 55px; 
     height: 55px;
 
     display: flex; 
@@ -101,7 +101,8 @@ html, body {
     align-self: flex-start;
 }
 
-.iconc {
+/* Setting the width of the last icon to be a bit bigger than the others (because it is smaller) */ 
+.icon-wrapper .iconc {
     width: 40px;
 }
 
@@ -110,12 +111,12 @@ html, body {
     box-sizing: border-box;
     text-align: center;
     padding: 5px;    
-}
-
-.icon-wrapper .icona, .iconb, .iconc {
+    
     cursor: pointer;
 }
+/* End of Styles for the left box */
 
+/* Styles for the right box */
 .wrapper .right {
     font-size: 14px;
     color: #c1c4d4;
@@ -156,6 +157,8 @@ html, body {
     font-size: 12px;
 
     /* left: 73%; */
+
+    /* This box always going to be in the right side */
     right: -25px;
     top: 0px;
     margin-top: -35px;
@@ -164,6 +167,7 @@ html, body {
 
 }
 
+/* Creating the arrow from the box */
 .wrapper .right .remainder-gb:before {
     content: "";
     position: absolute;
@@ -174,19 +178,6 @@ html, body {
     border-left: 27px solid transparent;
 
 }
-
-/* .wrapper .right .triangle {
-
-    position: absolute;
-    right: 50px;
-    margin-top: -85px;
-
-    width: 0;
-    height: 0;
-    border-top: 27px solid white;
-    border-left: 27px solid transparent;
-
-} */
 
 .wrapper .right .remainder-gb .value {
     font-size: 30px;
@@ -213,11 +204,13 @@ html, body {
     font-weight: 700;
 }
 
-
+/* Styles for the input */ 
 .right input {
     width: 100%;
-    background: #0c122c;
+
+    /* To be able to style the range slider how you want */
     -webkit-appearance: none;
+
     border-radius: 10px;
     border: 2px solid #0c122c;
     outline: none;
@@ -351,6 +344,7 @@ html, body {
 
     }
     
+    /* Making the arrow transparent */
     .wrapper .right .remainder-gb:before {
         content: "";
         position: absolute;
@@ -372,10 +366,6 @@ html, body {
     
         background-size: auto;
         background-size: 100vw 100vh;
-
-        /* background-position: center bottom; */
-        /* background-position: 0px 340px; */
-        
     }
 }
 
@@ -393,9 +383,6 @@ html, body {
     
         background-size: auto;
         background-size: 100vw 100vh;
-
-        /* background-position: center bottom; */
-        /* background-position: 0px 340px; */
         
     }
 
@@ -454,10 +441,6 @@ html, body {
         background-repeat: no-repeat;
     
         background-size: auto;
-
-        /* background-position: center bottom; */
-        /* background-position: 0px 340px; */
-        
     }
 
     .slider-value .text {
@@ -470,9 +453,6 @@ html, body {
 }
 
 @media(max-width: 330px) {
-
-
-
     .wrapper .right .remainder-gb {
         margin-bottom: -16px;
 
