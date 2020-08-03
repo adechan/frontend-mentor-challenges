@@ -62,11 +62,14 @@
        
         <!-- Share -->
         <div class="footer-share">
-          <div class="footer-share-border">
-            <img src="images/icon-share.svg" alt="" id="share">
+          <div id="footer-share-border" onclick="ToggleShareBox()">
+            <!-- Initially only the black icon is shown -->
+            <img src="images/icon-share.svg" alt="" id="share-black">
+            <img src="images/icon-search-white.svg" alt ="" id="share-white">
+             
           </div>
 
-          <div class="share-box">
+          <div id="share-box">
             <p id="text">SHARE</p>
             <img id="facebook" src="images/icon-facebook.svg" alt="">
             <img id="twitter" src="images/icon-twitter.svg" alt="">
@@ -81,4 +84,33 @@
   </div>
 
 </body>
+<script>
+  function ToggleShareBox() {
+    var shareBox = document.getElementById("share-box");
+    var displayType = shareBox.style.display;
+
+    var shareIcon = document.getElementById("footer-share-border");
+    var shareBlack = document.getElementById("share-black");
+    var shareWhite = document.getElementById("share-white");
+
+    if (displayType == "flex")
+    {
+      shareBox.style.display = "none";
+      shareIcon.style.background = "hsl(210, 46%, 95%)";
+
+      shareBlack.style.display = "block";
+      shareWhite.style.display = "none";
+    }
+    else 
+    {
+      shareBox.style.display = "flex";
+      shareIcon.style.background = "hsl(214, 17%, 51%)";
+
+      shareWhite.style.display = "block";
+      shareBlack.style.display = "none";
+    }
+
+  }
+  
+</script>
 </html>

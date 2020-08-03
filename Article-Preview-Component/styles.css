@@ -22,22 +22,30 @@
 html, body {
     height: 100%;
     background: var(--light-grayish-blue);
+    /* For IE */
+    background: hsl(210, 46%, 95%);
     font-family: 'Manrope', sans-serif;
 }
 
 
 .attribution {
-    padding-top: 3px;
+    padding-top: 2px;
     font-size: 11px;
     text-align: center;
     background: var(--attribution);
     color: var(--attribution-text);
+
+    /* For IE */
+    background: hsl(215, 22%, 64%);
+    color: hsl(208, 43%, 86%);
+
     height: 20px;
 
 }
 
 .attribution a {
     color: var(--attribution-a);
+    color: hsl(217, 62%, 95%);
     text-decoration: none;
 }
 
@@ -51,10 +59,7 @@ html, body {
     right: 0;
     bottom: 0;
     left: 0;
-
-    /* width: 53vw;
-    height: 40vh; */
-
+    
     width: 740px;
     height: 270px;
 
@@ -65,6 +70,7 @@ html, body {
 
     /* Right - Bottom - Blur */
     box-shadow: 1px 10px 30px var(--ligher-grayish-blue);
+    box-shadow: 1px 10px 30px hsl(212, 27%, 81%);
 }
 
 .wrapper .left {
@@ -98,6 +104,7 @@ html, body {
 
 .wrapper .right .header {
     color: var(--very-dark-grayish-blue);
+    color: hsl(217, 19%, 35%);
     font-size: 22px;
     font-weight: 700;
 
@@ -106,6 +113,7 @@ html, body {
 
 .wrapper .right .description { 
     color: var(--desaturated-dark-blue);
+    color: hsl(214, 17%, 51%);
     font-size: 12px;
     font-weight: 500;
     line-height: 1.5;
@@ -136,12 +144,14 @@ footer .footer-info {
 
 .details-michelle .footer-header {
     color: var(--very-dark-grayish-blue);
+    color: hsl(217, 19%, 35%);
     font-size: 13px;
     font-weight: 700;
 }
 
 .details-michelle .footer-date {
     color: var(--grayish-blue);
+    color: hsl(212, 23%, 69%);
     font-size: 11px;
     line-height: 1.5;
 
@@ -152,9 +162,10 @@ footer .footer-info {
     margin-top: 20px;
 }
 
-.footer-share .footer-share-border {
+.footer-share #footer-share-border {
     margin: 0;
     background: var(--light-grayish-blue);
+    background: hsl(210, 46%, 95%);
     height: 30px;
     width: 30px;
 
@@ -168,12 +179,21 @@ footer .footer-info {
 }
 
 /* So the icon keeps its original size */
-.footer-share .footer-share-border #share {
+.footer-share #footer-share-border #share-black {
+
+    /* Initially the black search icon should appear */
     display: block;
     margin: auto;
 }
 
-.footer-share .share-box {
+.footer-share #footer-share-border #share-white {
+
+    /* Initially the white search icon should not appear */
+    display: none;
+    margin: auto;
+}
+
+.footer-share #share-box {
     position: absolute;
 
     right: -170px;
@@ -183,15 +203,25 @@ footer .footer-info {
 
     width: 230px;
     height: 45px;
-    display: flex;
+    /* display: flex; */
     flex-direction: row;
     justify-content: center;
     background: var( --very-dark-grayish-blue);
+    background: hsl(217, 19%, 35%);
     border-radius: 8px;
+
+    justify-content: center;
+    align-items: center;
+
+    /* box-shadow: 0 6px 2px -2px var(--ligher-grayish-blue); */
+    box-shadow: 0px 15px 10px -15px var(--ligher-grayish-blue);
+    box-shadow: 0px 15px 10px -15px hsl(210, 46%, 95%);
+
+    display: none;
 }
 
 /* Box's triangle*/
-.footer-share .share-box:before {
+.footer-share #share-box:before {
     content: "";
     position: absolute;
 
@@ -199,31 +229,26 @@ footer .footer-info {
     
     border-left: 15px solid transparent;
     border-right: 15px solid transparent;
-    border-top: 15px solid var( --very-dark-grayish-blue);
+    border-top: 15px solid var( --very-dark-grayish-blue);   
+     border-top: 15px solid hsl(217, 19%, 35%);
 
 }
-
-.footer-share .share-box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.footer-share .share-box p {
+.footer-share #share-box p {
     color: var(--grayish-blue);
+    color: hsl(212, 23%, 69%);
     letter-spacing: 4px;
 
     font-size: 10px; ;
 }
 
-.footer-share .share-box img {
+.footer-share #share-box img {
     width: 17px;
 }
 
-.footer-share .share-box p, img {
+.footer-share #share-box p, img {
     margin-right: 15px;
 }
 
-.footer-share .share-box p {
+.footer-share #share-box p {
     margin-left: 15px;
 }
