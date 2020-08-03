@@ -244,6 +244,7 @@ footer .footer-info {
 
 .footer-share #share-box img {
     width: 17px;
+    cursor: pointer;
 }
 
 .footer-share #share-box p, img {
