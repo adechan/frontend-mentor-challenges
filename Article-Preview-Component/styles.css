@@ -537,6 +537,11 @@ footer .footer-info {
 
 @media (max-width: 376px) {
 
+    .wrapper .right {
+        margin-right: 30px;
+        margin-left: 30px;
+    }
+
     footer {
         margin-top: 0.5em;
         padding-top: 0.5em;
