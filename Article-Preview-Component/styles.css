@@ -120,7 +120,20 @@ html, body {
     font-weight: 500;
     line-height: 1.5;
 
+    overflow-y: scroll;
+
 }
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.wrapper .right .description::-webkit-scrollbar {
+    display: none;
+}
+
+.wrapper .right .description {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
 .wrapper .right footer {
     display: flex;
     flex-direction: row;
@@ -287,6 +300,9 @@ footer .footer-info {
 /* Tablet Version */
 @media (max-width: 968px)
 {
+    .description {
+        height: 15vh;
+    }
     .footer-share #share-box {
         right: -18vw;
         top: 55%;
@@ -382,8 +398,6 @@ footer .footer-info {
 
         flex: 4;
     }
-    
-    
 
     .wrapper .left #drawers-pic {
         width: 100%;
@@ -396,7 +410,7 @@ footer .footer-info {
     
     
     .wrapper .right .header {
-        font-size: 1.4em;
+        font-size: 1.3em;
     }
 
     .wrapper .right .description { 
