@@ -85,6 +85,7 @@ html, body {
 
 .wrapper .left #drawers-pic { 
     max-height: 100%;
+    margin-right: 0px;
 }
 
 .wrapper .right {
@@ -234,6 +235,7 @@ footer .footer-info {
     border-top: 15px solid hsl(217, 19%, 35%);
 
 }
+
 .footer-share #share-box p {
     color: var(--grayish-blue);
     color: hsl(212, 23%, 69%);
@@ -255,4 +257,187 @@ footer .footer-info {
     margin-left: 15px;
 }
 
-/* Mobile Version */
+/* Add colours when you hover the icons */
+
+/* Tablet Version */
+@media (max-width: 968px)
+{
+    .footer-share #share-box {
+        right: -18vw;
+        top: 55%;
+        width: 25vw;
+        height: 45px;
+    }
+}
+
+@media (max-width: 870px) {
+    .wrapper {
+        /* height: 35vh; */
+
+        width: 85vw;
+        height: 280px;
+    }
+
+    .wrapper .right .header {
+        font-size: 1.2em;
+    
+        margin-bottom: 10px;
+    }
+
+    .wrapper .right .description { 
+        font-size: 0.7em;
+        font-weight: 500;
+        line-height: 1.5;
+    }
+
+    footer .footer-info {
+        margin-top: 30px;
+    }
+
+    .footer-share #share-box {
+        right: -19vw;
+        top: 55%;
+        width: 26vw;
+        height: 45px;
+    }
+
+    .footer-share {
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 836px) {
+    .footer-share #share-box {
+        right: -18.5vw;
+        top: 55%;
+    }
+}
+
+@media (max-width: 749px) {
+
+    .wrapper .right .header {
+        font-size: 1em;
+        margin-bottom: 10px;
+    }
+
+    .wrapper .right .description { 
+        font-size: 0.7em;
+        font-weight: 500;
+        line-height: 1.5;
+    }
+
+    footer .footer-info {
+        margin-top: 40px;
+    }
+
+    .footer-share {
+        margin-top: 40px;
+    }
+}
+
+/* Mobile version */
+@media(max-width: 645px)
+{
+    .wrapper {
+        width: 90vw;
+        height: 75vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .wrapper .left {
+        border-bottom-left-radius: 0px;
+        border-top-right-radius: 10px;
+
+        flex: 4;
+    }
+
+    .wrapper .left #drawers-pic {
+        width: 100%;
+        object-fit: cover;
+    }
+    
+    
+    .wrapper .right .header {
+        font-size: 1.3em;
+    }
+
+    .wrapper .right .description { 
+        font-size: 0.8em;
+    }
+
+    footer .footer-info {
+        margin-top: 0px;
+    }
+    
+    footer {
+        position: absolute;
+
+        bottom: 0;
+        left: 0;
+
+        width: 100%;
+        margin-top: 0.5em;
+        padding-top: 0.5em;
+        padding-bottom: 2em;
+        background: white;
+
+        padding-left: 35px;
+        padding-right: 65px;
+    }
+
+    .footer-share {
+        margin-top: 10px;
+    }
+
+        
+    .footer-share #share-box {
+        position: absolute;
+
+        bottom: 0;
+        left: 50%;
+
+        width: 100%;
+        height: 100%;
+
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+
+        padding-left: 35px;
+        justify-content: left;
+
+        display: none;
+
+        z-index: 1;
+    }
+
+    /* Box's triangle*/
+    .footer-share #share-box:before {
+        content: "";
+        position: absolute;
+
+        display: none;
+    }
+
+    .footer-share #footer-share-border {
+        position: absolute;
+        z-index: 2;
+    }
+
+}
+
+@media (max-width: 400px)
+{
+    .wrapper .left {
+        flex: 4;
+    }
+    .wrapper .right .header {
+        font-size:  0.9em;
+    }
+
+    .wrapper .right .description { 
+        font-size: 0.8em;
+    }
+}
