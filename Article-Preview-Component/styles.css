@@ -300,9 +300,6 @@ footer .footer-info {
 /* Tablet Version */
 @media (max-width: 968px)
 {
-    .description {
-        height: 15vh;
-    }
     .footer-share #share-box {
         right: -18vw;
         top: 55%;
@@ -379,6 +376,10 @@ footer .footer-info {
 /* Mobile version */
 @media(max-width: 645px)
 {
+    .description {
+        height: 15vh;
+    }
+
     .footer-share #share-box i {
         font-size: 22px;
         margin-right: 20px;
