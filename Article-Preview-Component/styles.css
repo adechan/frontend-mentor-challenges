@@ -379,6 +379,12 @@ footer .footer-info {
 /* Mobile version */
 @media(max-width: 645px)
 {
+    .wrapper .right {
+        margin-left: 38px;
+        margin-right: 38px;
+    }
+
+
 
     .footer-share #share-box i {
         font-size: 22px;
