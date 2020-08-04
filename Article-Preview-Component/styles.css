@@ -119,19 +119,8 @@ html, body {
     font-size: 12px;
     font-weight: 500;
     line-height: 1.5;
-    /* overflow-y: scroll; */
 
 }
-/* 
-.wrapper .right .description::-webkit-scrollbar {
-    display: none;
-}
-
-.wrapper .right .description {
-    -ms-overflow-style: none;  
-    scrollbar-width: none;  
-} */
-
 .wrapper .right footer {
     display: flex;
     flex-direction: row;
@@ -253,14 +242,14 @@ footer .footer-info {
     letter-spacing: 4px;
 
     font-size: 10px; ;
+
+    margin-right: 15px;
 }
 
-.footer-share #share-box img {
-    width: 17px;
+.footer-share #share-box i {
+    font-size: 20px;
     cursor: pointer;
-}
 
-.footer-share #share-box p, img {
     margin-right: 15px;
 }
 
@@ -268,7 +257,32 @@ footer .footer-info {
     margin-left: 15px;
 }
 
+.fa-facebook-square, .fa-twitter, .fa-pinterest{
+    color: white;
+}
+
+
 /* Add colours when you hover the icons */
+.fa-facebook-square:hover {
+    color: #4267B2;
+    background: white;
+    border: 1px solid white;
+    border-radius: 2px;
+}
+
+.fa-twitter:hover {
+    color: #1DA1F2;
+    background: white;
+    border: 1px solid white;
+    border-radius: 2px;
+}
+
+.fa-pinterest:hover {
+    color: #C8232C;
+    background: white;
+    border: 1px solid white;
+    border-radius: 2px;
+}
 
 /* Tablet Version */
 @media (max-width: 968px)
@@ -349,6 +363,12 @@ footer .footer-info {
 /* Mobile version */
 @media(max-width: 645px)
 {
+
+    .footer-share #share-box i {
+        font-size: 22px;
+        margin-right: 20px;
+    }
+    
     .wrapper {
         width: 90vw;
         height: 75vh;
@@ -512,6 +532,13 @@ footer .footer-info {
 }
 
 @media (max-width: 321px) {
+
+    .footer-share #share-box i {
+        font-size: 16px;
+        cursor: pointer;
+    
+        margin-right: 15px;
+    }
 
     .wrapper .right .header {
         font-size:  0.85em;
