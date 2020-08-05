@@ -184,6 +184,8 @@ footer .footer-info {
     height: 30px;
     width: 30px;
 
+    margin-top: 0px;
+
     /* To center the icon */
     display: flex;
     justify-content: center;

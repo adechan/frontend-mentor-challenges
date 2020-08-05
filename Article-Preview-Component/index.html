@@ -94,10 +94,15 @@
     var shareBlack = document.getElementById("share-black");
     var shareWhite = document.getElementById("share-white");
 
+    var width = window.innerWidth;
+
     if (displayType == "flex")
     {
       shareBox.style.display = "none";
       shareIcon.style.background = "hsl(210, 46%, 95%)";
+
+      if (width < 968)
+        shareIcon.style.marginTop = "0px";
 
       shareBlack.style.display = "block";
       shareWhite.style.display = "none";
@@ -106,6 +111,9 @@
     {
       shareBox.style.display = "flex";
       shareIcon.style.background = "hsl(214, 17%, 51%)";
+
+      if (width < 968)
+        shareIcon.style.marginTop = "5px";
 
       shareWhite.style.display = "block";
       shareBlack.style.display = "none";
