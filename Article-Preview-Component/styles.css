@@ -504,7 +504,7 @@ footer .footer-info {
     }
 
     .wrapper .right .description { 
-        font-size: 0.7em;
+        font-size: 2vh;
     }
 }
 
@@ -575,7 +575,7 @@ footer .footer-info {
     }
 
     .wrapper .right .description { 
-        font-size: 0.5em;
+        font-size: 2vh;
     }
 
     footer {
