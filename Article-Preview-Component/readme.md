@@ -22,7 +22,7 @@ Your users should be able to:
 # Mobile Version
 **The Original Design** |**My solution**
 :-------------------------:|:-------------------------:
-![mobile-design](https://user-images.githubusercontent.com/29714385/89296683-568ac080-d66b-11ea-87db-39609867b831.jpg)  |  ![solution2](https://user-images.githubusercontent.com/29714385/89297207-2b54a100-d66c-11ea-8eca-5841164cf58c.PNG)
+![mobile-design](https://user-images.githubusercontent.com/29714385/89296683-568ac080-d66b-11ea-87db-39609867b831.jpg)  |  ![dasdas](https://user-images.githubusercontent.com/29714385/89328740-7e434e00-d696-11ea-9fc2-5dc3ccf34d24.png)
 
 
 # Test the component
