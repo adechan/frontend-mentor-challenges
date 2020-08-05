@@ -514,9 +514,9 @@ footer .footer-info {
         font-size:  1.2em;
     }
 
-    .wrapper .right .description { 
+    /* .wrapper .right .description { 
         font-size: 0.75em;
-    }
+    } */
 }
 
 @media (max-width: 400px)
@@ -527,10 +527,10 @@ footer .footer-info {
     .wrapper .right .header {
         font-size:  0.9em;
     }
-
+/* 
     .wrapper .right .description { 
         font-size: 0.75em;
-    }
+    } */
 
     footer {
         position: absolute;
@@ -575,7 +575,7 @@ footer .footer-info {
     }
 
     .wrapper .right .description { 
-        font-size: 0.6em;
+        font-size: 0.5em;
     }
 
     footer {
