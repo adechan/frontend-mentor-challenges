@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;500;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  font-family: 'Inter', sans-serif;
+}
+
+.attribution {
+  padding-top: 2px;
+  font-size: 11px;
+  text-align: center;
+  background: #f4f4fc;
+  color: black;
+
+  height: 20px;
+  font-weight: 300;
+
+}
+
+.attribution a {
+  color: #8467d3;
+  text-decoration: none;
+}
+
+.container {
+  height: calc(100% - 20px);
+  display: flex;
+  flex-direction: row;
+}
+
+.container .left-div {
+  flex: 1;
+  background-color: white;
+}
+
+.left-div .curve {
+  position: absolute;
+  bottom: 0;
+  width: 40vw;
+}
+
+.left-div .quotes {
+  position: absolute;
+  left: 15%;
+  top: 25%;
+}
+
+.left-div .description-info {
+  position: absolute;
+  z-index: 2;
+
+  height: 40vh;
+  width: 45vw;
+
+  top: 35%;
+  left: 11%;
+}
+
+.left-div .description {
+  font-size: 2.3vw;
+  font-weight: 300;
+}
+
+.left-div .personal {
+  margin-top: 30px;
+
+  display: flex;
+  flex-direction: row;
+
+}
+
+.personal .name, .job{
+  font-size: 16px;
+  font-weight: 700;
+  margin-right: 5px;
+}
+
+.personal .job {
+  color: #dddbe5;
+  font-weight: 500;
+}
+
+.container .right-div {
+  flex: 1;
+  background-color: white;
+}
+
+.right-div .pattern {
+  width: 45%;
+  position: absolute;
+  z-index: 0;
+  top: 5%;
+  right: 5%;
+}
+
+.right-div .profile {
+  position: absolute;
+  z-index: 1;
+
+  top: 13%;
+  right: 13%;
+
+  width: 35%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.arrows {
+  width: 100px;
+  height: 50px;
+  background-color: white;
+  border: 1px solid grey;
+  position: absolute;
+  
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+
+  border-radius: 50px;
+
+  top: 80%;
+  left: 55%;
+  z-index: 1;
+}
+
+.arrow {
+  height: 5px;
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+
+}
+
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}  
