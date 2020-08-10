@@ -15,12 +15,12 @@ Your users should be able to:
 **The Original Design**: 
 ![desktop-design-slide-1](https://user-images.githubusercontent.com/29714385/89767076-e0220e80-db01-11ea-8218-53f8d9f87e29.jpg)
 **My solution**: 
-![desktop](https://user-images.githubusercontent.com/29714385/89767105-edd79400-db01-11ea-8502-da34e953d9e5.PNG)
+![desktop](https://user-images.githubusercontent.com/29714385/89770593-ae13ab00-db07-11ea-9789-65d3f07c38a9.PNG)
 
 # Mobile Version
 **The Original Design** |**My solution**
 :-------------------------:|:-------------------------:
-![mobile-design-slide-1](https://user-images.githubusercontent.com/29714385/89767130-f8922900-db01-11ea-85ae-13abd362a986.jpg)  |  ![mobiles](https://user-images.githubusercontent.com/29714385/89767235-2ecfa880-db02-11ea-89ef-5d858bcf9431.PNG)
+![mobile-design-slide-1](https://user-images.githubusercontent.com/29714385/89767130-f8922900-db01-11ea-85ae-13abd362a986.jpg)  |  ![mobiles](https://user-images.githubusercontent.com/29714385/89770684-c7b4f280-db07-11ea-9306-939bbe2a65a2.PNG)
 
 
 # Test the component
