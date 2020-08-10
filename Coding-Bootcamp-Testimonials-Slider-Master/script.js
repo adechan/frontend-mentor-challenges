@@ -91,7 +91,6 @@ function AlwaysUpdate() {
         arrow_left.style.borderRadius = "50px 0 0 50px";
     }
 
-    console.log(window.current_id);
     if (window.current_id == Object.keys(information_users).length - 1) {
         arrow_right.style.backgroundColor = "#ebebeb";
         arrow_right.style.borderRadius = "0 50px 50px 0";

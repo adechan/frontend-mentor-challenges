@@ -169,6 +169,8 @@ html, body {
 /* Because you can't press previous */ 
 #arrow-left {
   background-color: #ebebeb;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
 }
 
 #arrow-left, #arrow-right {
