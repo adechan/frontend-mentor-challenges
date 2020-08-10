@@ -36,13 +36,8 @@ function ChangeInfo() {
     var arrow_left = document.getElementById("arrow-left");
     var arrow_right = document.getElementById("arrow-right");
 
-    // for (const arrow of arrow_left) {
-        arrow_left.addEventListener("click", PrevInfo);
-    // }
-
-    // for (const arrow of arrow_right ){
-        arrow_right.addEventListener("click", NextInfo);
-    // }
+    arrow_left.addEventListener("click", PrevInfo);
+    arrow_right.addEventListener("click", NextInfo);
 }
 
 function PrevInfo() {
@@ -85,3 +80,15 @@ function NextInfo() {
     
     window.current_id = current_id;
 }
+
+function ChangeInfoKeyboard(e) {
+    if (e.keyCode.toString() == "37") { // Left
+        PrevInfo();
+    }
+    else if (e.keyCode.toString() == "39") { // Right
+        NextInfo();
+    }
+
+}
+
+window.addEventListener('keydown', ChangeInfoKeyboard);
