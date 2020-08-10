@@ -16,21 +16,6 @@ var information_users = {
 
 var current_id = 0;
 
-// Should happen every time you change something in DOM
-// var arrow_left = document.getElementById("arrow-left");
-// var arrow_right = document.getElementsByClassName("arrow-right");
-
-// if (window.current_id == 0) {
-//     arrow_left.style.backgroundColor = "#ebebeb";
-//     // borderTopLeftRadius borderTopRightRadius borderBottomRightRadius borderBottomLeftRadius
-//     arrow_left.style.borderRadius = "50px 0 0 50px";
-// }
-// else {
-//     arrow_left.style.backgroundColor = "white";
-//     // borderTopLeftRadius borderTopRightRadius borderBottomRightRadius borderBottomLeftRadius
-//     arrow_left.style.borderRadius = "50px 0 0 50px";
-// }
-
 function ChangeInfo() {
 
     var arrow_left = document.getElementById("arrow-left");
@@ -91,4 +76,33 @@ function ChangeInfoKeyboard(e) {
 
 }
 
+function AlwaysUpdate() {
+    // Should happen every time you change something in DOM
+    var arrow_left = document.getElementById("arrow-left");
+    var arrow_right = document.getElementById("arrow-right");
+
+    if (window.current_id == 0) {
+        arrow_left.style.backgroundColor = "#ebebeb";
+        // borderTopLeftRadius borderTopRightRadius borderBottomRightRadius borderBottomLeftRadius
+        arrow_left.style.borderRadius = "50px 0 0 50px";
+    }
+    else {
+        arrow_left.style.backgroundColor = "white";
+        arrow_left.style.borderRadius = "50px 0 0 50px";
+    }
+
+    console.log(window.current_id);
+    if (window.current_id == Object.keys(information_users).length - 1) {
+        arrow_right.style.backgroundColor = "#ebebeb";
+        arrow_right.style.borderRadius = "0 50px 50px 0";
+    }
+    else {
+        arrow_right.style.backgroundColor = "white";
+        arrow_right.style.borderRadius = "0 50px 50px 0";
+    }
+}
+
 window.addEventListener('keydown', ChangeInfoKeyboard);
+
+window.addEventListener('click', AlwaysUpdate);
+window.addEventListener('keydown', AlwaysUpdate);
