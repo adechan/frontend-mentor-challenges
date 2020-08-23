@@ -31,16 +31,19 @@ html, body {
 
     text-align: center;
 
-    padding-top: 5vh; 
-    padding-bottom: 5vh;
+    /* padding-top: 5vh;  */
+    /* padding-bottom: 5vh; */
 
-    padding-left: 5vh;
-    padding-right: 5vh;
+    /* padding-left: 5vh; */
+    /* padding-right: 5vh; */
+
+    margin-top: 5vh;
     
     display: flex;
     flex-direction: column;
     justify-items: center;
     align-items: center;
+    justify-content: center;
 }
 
 #top {
@@ -83,8 +86,8 @@ html, body {
 }
 
 .card { 
-    /* height: 250px; */
-    height: 29vh;
+    height: 250px;
+    /* height: 29vh; */
     width: 350px;
 
     border-radius: 7px;
@@ -203,12 +206,12 @@ html, body {
     .wrapper {
         height: 100%;
         width: 100%;
-        padding-top: 8vh; 
+        margin-top: 5vh; 
         margin-bottom: 5vh;
     }
 
     #top {
-        width: 60vw;
+        width: 70vw;
     }
 
     #title-1 { 
@@ -225,11 +228,19 @@ html, body {
     }
     
     .card { 
-        height: 27vh;
-        width: 60vw;
+        height: 20vh;
+        width: 70vw;
 
         padding-bottom: 30px;
-    
+    }
+
+    .card .title {
+        margin-bottom: 10px;
+        font-size: 4vw;
+    }
+
+    .card .description {
+        font-size: 2.7vw;
     }
 
     #bottom {
@@ -264,22 +275,25 @@ html, body {
         grid-column-start: 1;
         grid-column-end: 1;
     }
+
+    .card img {
+        width: 120px;
+    }
 }
 
 @media (max-width: 476px) {
 
     .wrapper {
-        height: 100%;
+        /* height: 100%; */
         width: 100%;
-        padding-top: 8vh; 
-        margin-bottom: 3vh;
+        margin-top: 7vh; 
     }
 
     #top {
         width: 90vw;
     }
 
-    #title-1 { 
+     #title-1 { 
         font-size: 6vw;
     }
     
@@ -288,10 +302,10 @@ html, body {
     }
 
     #description-top{
-        font-size: 14px;
+        font-size: 13px;
         margin-bottom: 4vh;
         font-weight: 100;
-    }
+    } 
 
     .card { 
         width: 80vw;
@@ -303,6 +317,6 @@ html, body {
     }
 
     .card img {
-        width: 100px;
+        width: 85px;
     }
 }
