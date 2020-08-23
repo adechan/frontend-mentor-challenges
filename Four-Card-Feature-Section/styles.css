@@ -84,7 +84,7 @@ html, body {
 
 .card { 
     /* height: 250px; To update */
-    max-width: 250px;
+    max-height: 250px;
     height: 29vh;
     width: 350px;
 
