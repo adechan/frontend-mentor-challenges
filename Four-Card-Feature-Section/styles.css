@@ -298,6 +298,10 @@ html, body {
         height: 30vh;
     }
 
+    .card .description {
+        font-size: 12px;
+    }
+
     .card img {
         width: 100px;
     }
