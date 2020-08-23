@@ -1,4 +1,4 @@
-# Four card feature section
+# Four Card Feature Section
 
 
 ## The challenge
