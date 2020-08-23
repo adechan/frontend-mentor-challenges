@@ -20,6 +20,6 @@ Your users should:
 # Mobile Version
 **The Original Design** |**My solution**
 :-------------------------:|:-------------------------:
-![mobile-design](https://user-images.githubusercontent.com/29714385/90978397-5a1cb380-e556-11ea-9826-62b021a1c185.jpg)  |  to do
+![mobile-design](https://user-images.githubusercontent.com/29714385/90978397-5a1cb380-e556-11ea-9826-62b021a1c185.jpg)  |  ![mobile_version](https://user-images.githubusercontent.com/29714385/90978570-87b62c80-e557-11ea-87ac-f2a3acef3cd3.jpg)
 # Test the component
 https://adechan.github.io/Frontend-Mentor-Challenges/Four-Card-Feature-Section/
