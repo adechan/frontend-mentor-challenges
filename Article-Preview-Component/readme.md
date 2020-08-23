@@ -1,4 +1,4 @@
-# Article preview component
+# Article Preview Component
 
 ## The challenge
 
