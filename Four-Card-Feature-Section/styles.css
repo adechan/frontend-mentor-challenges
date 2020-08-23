@@ -32,10 +32,10 @@ html, body {
     text-align: center;
 
     margin-top: 5vh; 
-    padding-bottom: 5vh;
+    margin-bottom: 5vh;
 
-    padding-left: 5vw;
-    padding-right: 5vw;
+    /* margin-left: 5vw;
+    margin-right: 5vw; */
     
     display: flex;
     flex-direction: column;
@@ -222,15 +222,15 @@ html, body {
     }
 
     #title-1 { 
-        font-size: 1em;
+        font-size: 2em;
     }
     
     #title-2 {
-        font-size: 1em;
+        font-size: 2em;
     }
 
     #description-top { 
-        font-size: 2em;
+        font-size: 1em;
         font-weight: 100;
     }
     
