@@ -309,11 +309,17 @@ html, body {
 
     .card { 
         width: 80vw;
+        min-height: 30vh;
         height: 30vh;
     }
 
+    .card .title {
+        font-size: 1.2em;
+        margin-bottom: 5px;
+    }
+
     .card .description {
-        font-size: 3vw;
+        font-size: 0.75em;
     }
 
     .card img {
