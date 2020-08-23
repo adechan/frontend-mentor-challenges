@@ -169,7 +169,7 @@ html, body {
     
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1350px) {
     #bottom {
         grid-template-columns: auto auto ;
         grid-template-rows: auto auto auto auto auto auto;
@@ -208,7 +208,8 @@ html, body {
     }
 }
 
-@media (max-width: 800px) {
+
+@media (max-width: 880px) {
 
     .wrapper {
         height: 100%;
@@ -236,7 +237,7 @@ html, body {
     
     .card { 
         height: 27vh;
-        width: 80vw;
+        width: 60vw;
 
         padding-bottom: 30px;
     
@@ -276,7 +277,8 @@ html, body {
     }
 }
 
-@media (max-width: 476px) {
+
+@media (max-width: 600px) {
 
     .wrapper {
         height: 100%;
