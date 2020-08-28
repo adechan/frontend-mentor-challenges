@@ -84,7 +84,9 @@ html, body {
     margin-top: 30px;
     margin-bottom: 30px;
 
-    width: 550px;
+    width: 99%;
+    min-width: 23em;
+    /* min-width: 500px; */
     line-height: 30px;
     font-weight: 600;
     /* font-size: 19px; */
@@ -92,15 +94,24 @@ html, body {
     color: #d4a3a3;
 }
 
+#input {
+    position: relative;
+}
+
+
 #input input {
-    font-size: 1.4em;
+    font-size: 1.2em;
     position: relative;
     border:  none;
     outline: none;
     height: 70px;
+
     width: 100%;
+    /* min-width: 440px; */
 
     padding-left: 30px;
+    padding-right: 120px;
+
     color: #e1af9a;
 
     border: 1px solid #dcb2b2;
@@ -132,15 +143,17 @@ html, body {
     margin-top: 20px;
 }
 
+
 #input #send {
     position: absolute;
+    
     width: 150px;
     height: 70px;
 
     background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
-    /* background: #f4adad; */
     border: 1px solid #f4adad;
     border-radius: 99px;
+
     margin-left: -100px;
 }
 
