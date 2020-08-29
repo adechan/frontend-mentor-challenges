@@ -13,7 +13,6 @@ html, body {
 }
 
 .container {
-    /* height: calc(100% - 20px); */
     height: 100%;
     height: 100%;
     display: flex;
@@ -32,12 +31,10 @@ html, body {
 }
 
 #logo {
-    /* background: pink; */
     padding-top: 7vh;
 }
 
 #logo img {
-    /* width: 200px; */
     width: 15em;
 }
 
@@ -66,7 +63,6 @@ html, body {
 }
 
 #header {
-    /* font-size: 70px; */
     font-size: 5em;
     letter-spacing: 15px;
 }
@@ -87,10 +83,8 @@ html, body {
 
     width: 99%;
     min-width: 23em;
-    /* min-width: 500px; */
     line-height: 30px;
     font-weight: 600;
-    /* font-size: 19px; */
     font-size: 1.2em;
     color: #d4a3a3;
 }
@@ -108,8 +102,6 @@ html, body {
     height: 70px;
 
     width: 100%;
-    /* min-width: 440px; */
-
     padding-left: 30px;
     padding-right: 120px;
 
@@ -120,7 +112,7 @@ html, body {
 }
 
 #email:focus{
-    border: 3px solid #d4a3a3;
+    border: 2px solid #d4a3a3;
     
 }
 
@@ -156,6 +148,7 @@ html, body {
     border-radius: 99px;
 
     margin-left: -100px;
+    box-shadow: -4px 33px 53px -3px rgba(242,219,218,1);
 }
 
 #right { 
@@ -168,4 +161,93 @@ html, body {
     object-fit: cover;
     height: 100%;
     width: 100%;
+}
+
+#image-mobile {
+    display: none;
+}
+
+/* Mobile Version*/
+@media (max-width: 1050px) {
+
+    #center {
+        margin-top: -19vh;
+    }
+    
+    
+    #left { 
+        width: 100%;
+        padding-left: 3vw;
+        padding-right: 8vw;
+    }
+
+    #logo {
+        padding-top: 5vh;
+        padding-bottom: 5vh;
+    }
+    
+    #logo img {
+        width: 12em;
+    }
+}
+
+@media (max-width: 630px) {
+
+    #logo img{
+        width: 130px;
+    }
+
+    #logo {
+        padding-top: 2vh;
+        padding-bottom: 2vh;
+    }
+    
+    #right {
+        display: none;
+    }
+
+    #left { 
+        width: 100%;
+        padding-left: 5vw;
+        padding-right: 5vw;
+    }
+
+    #image-mobile {
+        display: block;
+
+    }
+
+    #image-mobile img {
+        object-fit: cover;
+        height: 300px;
+        width: 100%;
+    }
+
+    #sub-container {
+        text-align: center;
+    }
+
+    
+    #center {
+        margin-top: -40vh;
+        max-width: 100%;
+    }
+
+    #header {
+        font-size: 8vw;
+        /* font-size: 3.1em; */
+    }
+
+    #description {
+        font-size: 1.1em;
+        height: 100%;
+        width: 90vw;
+        min-width: 200px;
+    }
+    
+    
+    #input #send {
+    
+        width: 130px;
+    }
 }
