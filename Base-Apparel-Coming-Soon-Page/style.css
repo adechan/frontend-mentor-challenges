@@ -210,6 +210,8 @@ html, body {
         width: 100%;
         padding-left: 5vw;
         padding-right: 5vw;
+
+        /* overflow: scroll; */
     }
 
     #image-mobile {
@@ -219,7 +221,7 @@ html, body {
 
     #image-mobile img {
         object-fit: cover;
-        height: 300px;
+        height: 45vw;
         width: 100%;
     }
 
@@ -234,20 +236,39 @@ html, body {
     }
 
     #header {
+        margin-top: 5vh;
         font-size: 8vw;
-        /* font-size: 3.1em; */
     }
 
     #description {
-        font-size: 1.1em;
+        font-size: 1em;
         height: 100%;
         width: 90vw;
         min-width: 200px;
+        
+        line-height: 21px;
     }
     
+    #input input {
+        height: 50px;
+    }
     
     #input #send {
     
-        width: 130px;
+        width: 110px;
+        height: 50px;
+    }
+
+
+}
+
+@media (max-width: 361px) {
+    #description {
+        font-size: 0.8em;
+        line-height: 15px;
+    }
+
+    #left {
+        overflow: hidden;
     }
 }
