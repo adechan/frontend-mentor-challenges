@@ -139,6 +139,8 @@ html, body {
 
 #input #send {
     position: absolute;
+    top: 0;
+    right: 0;
     
     width: 150px;
     height: 70px;
