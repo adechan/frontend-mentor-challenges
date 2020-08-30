@@ -95,7 +95,7 @@ html, body {
 
 
 #input input {
-    font-size: 1.2em;
+    font-size: 1.1em;
     position: relative;
     border:  none;
     outline: none;
@@ -103,9 +103,9 @@ html, body {
 
     width: 100%;
     padding-left: 30px;
-    padding-right: 120px;
+    padding-right: 190px;
 
-    color: #e1af9a;
+    color: #413a3a;
 
     border: 1px solid #dcb2b2;
     border-radius: 99px;
@@ -114,6 +114,10 @@ html, body {
 #email:focus{
     border: 2px solid #d4a3a3;
     
+}
+
+#email:invalid {
+    border: 2px solid #f96b6b;
 }
 
 ::placeholder {
@@ -132,15 +136,29 @@ html, body {
 
 #input #error {
     position: absolute;
-    margin-left: -150px;
+    margin-left: -190px;
     margin-top: 20px;
+
+    display: none;
 }
 
+#error-message {
+    position: absolute;
+    margin-left: 40px;
+    margin-top: 10px;
+    color: #d4a3a3;
+
+    font-size: 1em;
+
+    display: none;
+}
 
 #input #send {
     position: absolute;
     top: 0;
     right: 0;
+
+    cursor: pointer;
     
     width: 150px;
     height: 70px;
@@ -151,6 +169,10 @@ html, body {
 
     margin-left: -100px;
     box-shadow: -4px 33px 53px -3px rgba(242,219,218,1);
+}
+
+#input #send:hover {
+    background-image: linear-gradient(135deg, hsl(0, 0%, 100%), #f4adad);
 }
 
 #right { 
@@ -261,6 +283,11 @@ html, body {
         height: 50px;
     }
 
+    #input #error {
+        position: absolute;
+        margin-left: -150px;
+        margin-top: 13px;
+    }
 
 }
 
@@ -272,5 +299,26 @@ html, body {
 
     #left {
         overflow: hidden;
+    }
+    
+    #input #send {
+    
+        width: 60px;
+        height: 50px;
+    }
+
+    #input #error {
+        position: absolute;
+        margin-left: -95px;
+        margin-top: 13px;
+    }
+
+    #input input {
+        padding-right: 100px;
+        font-size: 0.8em;
+    }
+
+    #input #error-message {
+        font-size: 0.8em;
     }
 }
