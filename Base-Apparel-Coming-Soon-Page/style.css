@@ -106,6 +106,7 @@ html, body {
     padding-right: 190px;
 
     color: #413a3a;
+    background: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
 
     border: 1px solid #dcb2b2;
     border-radius: 99px;
@@ -291,10 +292,10 @@ html, body {
 
 }
 
-@media (max-width: 361px) {
+@media (max-width: 376px) {
     #description {
         font-size: 0.8em;
-        line-height: 15px;
+        line-height: 20px;
     }
 
     #left {
