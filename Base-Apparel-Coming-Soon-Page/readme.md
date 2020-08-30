@@ -18,11 +18,12 @@ Your users should be able to:
 **The Original Design**: 
 ![desktop-design](https://user-images.githubusercontent.com/29714385/91660267-04a84f80-eade-11ea-8dfa-727a7e15129e.jpg)
 **My solution**: 
+![1](https://user-images.githubusercontent.com/29714385/91660305-3ae5cf00-eade-11ea-85b7-877252b8e4f3.PNG)
 
 # Mobile Version
 **The Original Design** |**My solution**
 :-------------------------:|:-------------------------:
-![mobile-design](https://user-images.githubusercontent.com/29714385/91660275-0e31b780-eade-11ea-900c-bb9b2526344c.jpg)  |  
+![mobile-design](https://user-images.githubusercontent.com/29714385/91660275-0e31b780-eade-11ea-900c-bb9b2526344c.jpg)  |  ![2](https://user-images.githubusercontent.com/29714385/91660417-68327d00-eade-11ea-839b-1acccf063424.PNG)
 
 
 # Test the component
