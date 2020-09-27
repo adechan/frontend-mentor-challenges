@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/Frontend-Mentor-Challenges/social-proof-section/static/css/main.13519ebe.chunk.css",
+    "main.js": "/Frontend-Mentor-Challenges/social-proof-section/static/js/main.d2cf968b.chunk.js",
+    "main.js.map": "/Frontend-Mentor-Challenges/social-proof-section/static/js/main.d2cf968b.chunk.js.map",
+    "runtime-main.js": "/Frontend-Mentor-Challenges/social-proof-section/static/js/runtime-main.51fed54c.js",
+    "runtime-main.js.map": "/Frontend-Mentor-Challenges/social-proof-section/static/js/runtime-main.51fed54c.js.map",
+    "static/js/2.439ba925.chunk.js": "/Frontend-Mentor-Challenges/social-proof-section/static/js/2.439ba925.chunk.js",
+    "static/js/2.439ba925.chunk.js.map": "/Frontend-Mentor-Challenges/social-proof-section/static/js/2.439ba925.chunk.js.map",
+    "index.html": "/Frontend-Mentor-Challenges/social-proof-section/index.html",
+    "precache-manifest.1f4c2f52fc667caa3041bc241a8b67db.js": "/Frontend-Mentor-Challenges/social-proof-section/precache-manifest.1f4c2f52fc667caa3041bc241a8b67db.js",
+    "service-worker.js": "/Frontend-Mentor-Challenges/social-proof-section/service-worker.js",
+    "static/css/main.13519ebe.chunk.css.map": "/Frontend-Mentor-Challenges/social-proof-section/static/css/main.13519ebe.chunk.css.map",
+    "static/js/2.439ba925.chunk.js.LICENSE.txt": "/Frontend-Mentor-Challenges/social-proof-section/static/js/2.439ba925.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/Frontend-Mentor-Challenges/social-proof-section/static/media/bg-pattern-top-mobile.f55aa9cc.svg",
+    "static/media/icon-star.svg": "/Frontend-Mentor-Challenges/social-proof-section/static/media/icon-star.7f398b9a.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.51fed54c.js",
+    "static/js/2.439ba925.chunk.js",
+    "static/css/main.13519ebe.chunk.css",
+    "static/js/main.d2cf968b.chunk.js"
+  ]
+}
