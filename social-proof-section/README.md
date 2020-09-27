@@ -16,7 +16,8 @@ Your users should:
 ![desktop-design](https://user-images.githubusercontent.com/29714385/94367983-762dea80-00ea-11eb-82a5-63fd549b9e0d.jpg)
 
 **My solution**: 
-my_pic
+![desktop](https://user-images.githubusercontent.com/29714385/94368033-c907a200-00ea-11eb-9b6c-fbda050d3b5d.PNG)
+
 
 # Mobile Version
 **The Original Design** |**My solution**
