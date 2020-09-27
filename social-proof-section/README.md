@@ -22,6 +22,6 @@ Your users should:
 # Mobile Version
 **The Original Design** |**My solution**
 :-------------------------:|:-------------------------:
-![mobile-design](https://user-images.githubusercontent.com/29714385/94368818-f9513f80-00ee-11eb-89a0-00f4a8b21413.jpg)  |  ![resized](https://user-images.githubusercontent.com/29714385/94368862-34537300-00ef-11eb-8442-f85be0552da4.jpg)
+![mobile-design](https://user-images.githubusercontent.com/29714385/94368818-f9513f80-00ee-11eb-89a0-00f4a8b21413.jpg)  |![resized](https://user-images.githubusercontent.com/29714385/94368862-34537300-00ef-11eb-8442-f85be0552da4.jpg)
 # Test the component
 
