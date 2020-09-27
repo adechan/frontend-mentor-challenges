@@ -1,6 +1,6 @@
 .app {
-  height: 100%;
-  width: 100%;
+  height: 100vh;
+  width: 100vw;
 
   background: url(./assets/bg-pattern-top-desktop.svg) left top no-repeat,
     url(./assets/bg-pattern-bottom-desktop.svg) bottom right no-repeat;
@@ -18,6 +18,8 @@
 /* Mobile */
 @media (max-width: 550px) {
   .app {
+    height: 100%;
+    width: 100%;
     background: url(./assets/bg-pattern-top-mobile.svg) left top no-repeat,
       url(./assets/bg-pattern-bottom-mobile.svg) bottom right no-repeat;
   }
