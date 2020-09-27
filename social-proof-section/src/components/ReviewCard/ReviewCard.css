@@ -1,0 +1,87 @@
+.reviewCard {
+  background-color: #511f50;
+  color: white;
+  width: 310px;
+  height: 200px;
+
+  padding: 20px;
+  margin-right: 30px;
+
+  border-radius: 8px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.reviewCard__info {
+  display: flex;
+}
+
+.reviewCard__info,
+.reviewCard__description {
+  margin-left: 20px;
+}
+
+.reviewCard__avatar {
+  border-radius: 50%;
+  object-fit: contain;
+  width: 50px;
+}
+
+.reviewCard__personalInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 20px;
+}
+
+.reviewCard__name {
+  font-size: 12px;
+  font-weight: 700;
+  margin-bottom: 3px;
+  color: hsl(300, 24%, 96%);
+}
+
+.reviewCard__buyer {
+  font-size: 13px;
+  color: hsl(333, 80%, 67%);
+}
+
+.reviewCard__description {
+  font-size: 12px;
+  line-height: 20px;
+  color: hsl(300, 24%, 96%);
+}
+
+.reviewCard:nth-child(3n + 1) {
+  margin-top: 0px;
+}
+
+.reviewCard:nth-child(3n + 2) {
+  margin-top: 20px;
+}
+
+.reviewCard:nth-child(3n + 3) {
+  margin-top: 40px;
+}
+
+/* Tablet */
+@media (max-width: 1200px) {
+  .reviewCard:nth-child(3n + 1) {
+    margin-top: 0px;
+  }
+
+  .reviewCard:nth-child(3n + 2) {
+    margin-top: 0px;
+  }
+
+  .reviewCard:nth-child(3n + 3) {
+    margin-top: 0px;
+  }
+
+  .reviewCard {
+    margin-right: 0px;
+    margin-bottom: 20px;
+  }
+}

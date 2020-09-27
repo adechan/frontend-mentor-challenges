@@ -1,0 +1,24 @@
+.app {
+  height: 100%;
+  width: 100%;
+
+  background: url(./assets/bg-pattern-top-desktop.svg) left top no-repeat,
+    url(./assets/bg-pattern-bottom-desktop.svg) bottom right no-repeat;
+}
+
+/* Hide scrollbar */
+.app {
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+}
+::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
+
+/* Mobile */
+@media (max-width: 550px) {
+  .app {
+    background: url(./assets/bg-pattern-top-mobile.svg) left top no-repeat,
+      url(./assets/bg-pattern-bottom-mobile.svg) bottom right no-repeat;
+  }
+}
