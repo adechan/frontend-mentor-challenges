@@ -23,6 +23,6 @@ Your users should:
 **The Original Design** |**My solution**
 :-------------------------:|:-------------------------:
 ![mobile-design](https://user-images.githubusercontent.com/29714385/94367991-7ded8f00-00ea-11eb-8c1e-dc454f78f919.jpg)
-  |  my_pic
+  |  ![imgonline-com-ua-twotoone-ufLgxsHVCvY2l](https://user-images.githubusercontent.com/29714385/94368765-ad9e9600-00ee-11eb-9900-c218a0fde39d.jpg)
 # Test the component
 
