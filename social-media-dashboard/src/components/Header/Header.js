@@ -4,7 +4,7 @@ import SwitchSlider from "../SwitchSlider/SwitchSlider";
 import "./Header.css";
 
 function Header() {
-  const [{ isDarkMode }, dispatch] = useDataLayerValue();
+  const [{ isDarkMode, totalFollowers }, dispatch] = useDataLayerValue();
 
   return (
     <div

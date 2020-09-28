@@ -12,14 +12,23 @@
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
+  cursor: pointer;
 }
 
 .followersCard__dark {
   background-color: #252b43;
 }
 
+.followersCard__dark:hover {
+  background-color: #343a55;
+}
+
 .followersCard__light {
   background-color: #f0f3fa;
+}
+
+.followersCard__light:hover {
+  background-color: #dadce0;
 }
 
 @media (max-width: 551px) {
@@ -86,5 +95,12 @@
 .followersCard__today p {
   font-size: 13px;
   font-weight: 600;
+}
+
+.followersCard__todayGreen {
   color: #1eb589;
+}
+
+.followersCard__todayRed {
+  color: #dc414c;
 }

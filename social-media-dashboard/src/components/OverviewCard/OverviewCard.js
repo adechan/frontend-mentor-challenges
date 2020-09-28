@@ -1,10 +1,16 @@
 import React from "react";
-import FacebookIcon from "../../assets/icon-facebook.svg";
 import ArrowUp from "../../assets/icon-up.svg";
+import ArrowDown from "../../assets/icon-down.svg";
 import { useDataLayerValue } from "../../DataLayer";
 import "./OverviewCard.css";
 
-function OverviewCard() {
+function OverviewCard({
+  title,
+  icon,
+  count,
+  increasedPercent,
+  decreasedPercent,
+}) {
   const [{ isDarkMode }, dispatch] = useDataLayerValue();
 
   return (
@@ -15,8 +21,8 @@ function OverviewCard() {
       }
     >
       <div className="overviewCard__top">
-        <p>Page Views</p>
-        <img src={FacebookIcon} alt="" />
+        <p>{title}</p>
+        <img src={icon} alt="" />
       </div>
 
       <div className="overviewCard__bottom">
@@ -25,13 +31,20 @@ function OverviewCard() {
             isDarkMode ? "overviewCard__countDark" : "overviewCard__countLight"
           }
         >
-          87
+          {count}
         </h1>
 
-        <div className="overviewCard__percent">
-          <img src={ArrowUp} alt="" />
-          <p>3%</p>
-        </div>
+        {increasedPercent != 0 ? (
+          <div className="overviewCard__percent">
+            <img src={ArrowUp} alt="" />
+            <p className="overviewCard__percentGreen">{increasedPercent}%</p>
+          </div>
+        ) : (
+          <div className="overviewCard__percent">
+            <img src={ArrowDown} alt="" />
+            <p className="overviewCard__percentRed">{decreasedPercent}%</p>
+          </div>
+        )}
       </div>
     </div>
   );

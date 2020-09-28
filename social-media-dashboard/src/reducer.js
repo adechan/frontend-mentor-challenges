@@ -1,5 +1,6 @@
 export const initialState = {
   isDarkMode: true,
+  totalFollowers: 0,
 };
 
 const reducer = (state, action) => {
@@ -11,6 +12,12 @@ const reducer = (state, action) => {
       return {
         ...state,
         isDarkMode: action.isDarkMode,
+      };
+    case "SET_TOTAL_FOLLOWERS":
+      console.log(initialState.totalFollowers);
+      return {
+        ...state,
+        totalFollowers: action.totalFollowers,
       };
 
     default:

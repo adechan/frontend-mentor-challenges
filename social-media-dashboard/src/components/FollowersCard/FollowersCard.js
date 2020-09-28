@@ -1,11 +1,18 @@
-import React from "react";
-import FacebookIcon from "../../assets/icon-facebook.svg";
+import React, { useEffect } from "react";
 import ArrowUp from "../../assets/icon-up.svg";
+import ArrowDown from "../../assets/icon-down.svg";
 import { useDataLayerValue } from "../../DataLayer";
 import "./FollowersCard.css";
 
-function FollowersCard() {
+function FollowersCard({
+  icon,
+  account,
+  followers,
+  increasedToday,
+  decreasedToday,
+}) {
   const [{ isDarkMode }, dispatch] = useDataLayerValue();
+
   return (
     <div
       className={
@@ -14,8 +21,8 @@ function FollowersCard() {
       }
     >
       <div className="followersCard__app">
-        <img src={FacebookIcon} alt="" />
-        <p>@nathanf</p>
+        <img src={icon} alt="" />
+        <p>@{account}</p>
       </div>
 
       <div className="followersCard__followersCount">
@@ -26,15 +33,22 @@ function FollowersCard() {
               : "followersCard__followersCountLight"
           }
         >
-          1987
+          {followers}
         </h1>
         <p>FOLLOWERS</p>
       </div>
 
-      <div className="followersCard__today">
-        <img src={ArrowUp} alt="" />
-        <p>12 Today</p>
-      </div>
+      {increasedToday ? (
+        <div className="followersCard__today">
+          <img src={ArrowUp} alt="" />
+          <p className="followersCard__todayGreen">{increasedToday} Today</p>
+        </div>
+      ) : (
+        <div className="followersCard__today">
+          <img src={ArrowDown} alt="" />
+          <p className="followersCard__todayRed">{decreasedToday} Today</p>
+        </div>
+      )}
     </div>
   );
 }
