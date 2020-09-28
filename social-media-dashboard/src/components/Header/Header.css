@@ -1,0 +1,29 @@
+.header {
+  display: flex;
+  padding: 5vh;
+
+  justify-content: space-between;
+  padding-left: 10vw;
+  padding-right: 10vw;
+  padding-bottom: 20vh;
+
+  background-color: #20222f;
+
+  z-index: -1;
+  margin-bottom: -100px;
+}
+
+.header__description {
+  display: flex;
+  flex-direction: column;
+}
+
+.header__title {
+  font-size: 25px;
+}
+
+.header__followers {
+  font-size: 13px;
+  font-weight: 600;
+  color: #888cb0;
+}

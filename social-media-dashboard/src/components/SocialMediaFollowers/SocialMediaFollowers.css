@@ -1,0 +1,9 @@
+.socialMediaFollowers {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-left: 10vw;
+  padding-right: 10vw;
+
+  justify-content: space-evenly;
+}

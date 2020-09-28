@@ -1,0 +1,18 @@
+.socialMediaOverview {
+  padding-left: 10vw;
+  padding-right: 10vw;
+}
+
+.socialMediaOverview__title {
+  padding-top: 5vh;
+  padding-bottom: 4vh;
+}
+
+.socialMediaOverview__cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  justify-content: space-evenly;
+  padding-bottom: 10vh;
+}
