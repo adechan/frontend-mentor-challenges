@@ -12,6 +12,14 @@
   justify-content: space-evenly;
 }
 
+@media (max-width: 551px) {
+  .overviewCard {
+    width: 85vw;
+    margin-right: 0px;
+    margin-bottom: 15px;
+  }
+}
+
 .overviewCard__top,
 .overviewCard__bottom {
   padding-left: 40px;

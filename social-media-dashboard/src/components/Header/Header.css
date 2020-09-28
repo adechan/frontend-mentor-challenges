@@ -27,3 +27,19 @@
   font-weight: 600;
   color: #888cb0;
 }
+
+/* Mobile */
+@media (max-width: 550px) {
+  .header {
+    flex-direction: column;
+  }
+
+  .header__description {
+    padding-bottom: 3vh;
+    border-bottom: 1px solid #383a49;
+  }
+
+  .header__title {
+    font-size: 1.2em;
+  }
+}

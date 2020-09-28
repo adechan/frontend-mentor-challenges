@@ -5,6 +5,15 @@
   align-items: center;
 }
 
+/* Mobile */
+@media (max-width: 550px) {
+  .switchSlider {
+    padding-top: 3vh;
+
+    justify-content: space-between;
+  }
+}
+
 .switchSlider__mode {
   margin-right: 10px;
   font-size: 13px;
