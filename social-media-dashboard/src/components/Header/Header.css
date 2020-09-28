@@ -7,10 +7,16 @@
   padding-right: 10vw;
   padding-bottom: 20vh;
 
-  background-color: #20222f;
-
   z-index: -1;
   margin-bottom: -100px;
+}
+
+.header__dark {
+  background-color: #20222f;
+}
+
+.header__light {
+  background-color: #f8f9fe;
 }
 
 .header__description {
@@ -20,6 +26,14 @@
 
 .header__title {
   font-size: 25px;
+}
+
+.header__titleDark {
+  color: white;
+}
+
+.header__titleLight {
+  color: black;
 }
 
 .header__followers {
@@ -34,9 +48,14 @@
     flex-direction: column;
   }
 
-  .header__description {
+  .header__descriptionDark {
     padding-bottom: 3vh;
     border-bottom: 1px solid #383a49;
+  }
+
+  .header__descriptionLight {
+    padding-bottom: 3vh;
+    border-bottom: 1px solid #9799b6;
   }
 
   .header__title {

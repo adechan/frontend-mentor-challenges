@@ -8,6 +8,14 @@
   padding-bottom: 4vh;
 }
 
+.socialMediaOverview__titleDark {
+  color: white;
+}
+
+.socialMediaOverview__titleLight {
+  color: black;
+}
+
 .socialMediaOverview__cards {
   display: flex;
   flex-direction: row;

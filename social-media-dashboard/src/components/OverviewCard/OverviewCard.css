@@ -5,11 +5,18 @@
   margin-right: 10px;
 
   border-radius: 10px;
-  background-color: #252b43;
 
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+}
+
+.overviewCard__dark {
+  background-color: #252b43;
+}
+
+.overviewCard__light {
+  background-color: #f0f3fa;
 }
 
 @media (max-width: 551px) {
@@ -30,6 +37,14 @@
 
 .overviewCard__bottom {
   align-items: flex-end;
+}
+
+.overviewCard__countDark {
+  color: white;
+}
+
+.overviewCard__countLight {
+  color: black;
 }
 
 .overviewCard__top > p {
