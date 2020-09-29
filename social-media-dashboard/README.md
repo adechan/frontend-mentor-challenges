@@ -15,5 +15,32 @@ Your users should be able to:
 - See hover states for all interactive elements on the page
 - Toggle color theme to their preference
 
+## New things I learned doing this:
+* You have to use ```background-image``` to create a gradient
+* To create an *overlay effect* on the Header I used: 
+    ``` 
+    z-index: -1;
+    margin-bottom: -100px
+    ```
+* Use ```flex-wrap: wrap``` so the flex items are forced to wrap onto multiple lines
+* *Array.reduce(function, initialValue)*: executes a *reducer function* on each element of the array, resulting in *single output value*
+  ```
+  const getTotalFollowers = (listOfFollowers) => (listOfFollowers?.reduce((
+    accumulator, currentValue) => accumulator + currentValue,
+    0)
+  ```
+  * *function*: ```(accumulator, currentValue) => accumulator + currentValue```
+  * *initialValue*: 0
+* You **cannot** use *border-radius* with *background-image*  
+  * *TRICK* to be able to have rounded border-top with gradient:
+  ```
+  border-top: 5px solid trasparent;
+  background-image: linear-gradient(_backgroundColour, _backgroundColour), 
+                    linear-gradient(_colourGradient1, _colourGradient2);
+  background-clip: padding-box/ content-box, border-box;
+  ```
+    * *padding-box*: when you are using padding in your element
+    * *content-box*: when you are not using padding 
+
 ## [Live Demo](https://social-media-dashboard-f439f.web.app/)
 
