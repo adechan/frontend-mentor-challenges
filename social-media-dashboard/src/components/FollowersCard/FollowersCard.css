@@ -46,6 +46,10 @@
 
 .followersCard__dark:hover {
   background-color: #343a55;
+  border-top: 5px solid transparent;
+  background-image: linear-gradient(#343a55, #343a55),
+    linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
+  background-clip: padding-box, border-box;
 }
 
 .followersCard__light {
@@ -54,6 +58,10 @@
 
 .followersCard__light:hover {
   background-color: #dadce0;
+  border-top: 5px solid transparent;
+  background-image: linear-gradient(#dadce0, #dadce0),
+    linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
+  background-clip: padding-box, border-box;
 }
 
 @media (max-width: 551px) {
