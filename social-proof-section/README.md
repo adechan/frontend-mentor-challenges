@@ -1,5 +1,7 @@
 # Social Proof Section
 
+![2](https://user-images.githubusercontent.com/29714385/94536880-8c06f100-024b-11eb-9e95-14678d643525.jpg)
+
 
 ## The challenge
 
@@ -11,18 +13,5 @@ Your users should:
 
 - View the optimal layout for the site depending on their device's screen size
 
-# Desktop Version
-**The Original Design**: 
-![desktop-design](https://user-images.githubusercontent.com/29714385/94367983-762dea80-00ea-11eb-82a5-63fd549b9e0d.jpg)
-
-**My solution**: 
-![desktop](https://user-images.githubusercontent.com/29714385/94368033-c907a200-00ea-11eb-9b6c-fbda050d3b5d.PNG)
-
-
-# Mobile Version
-**The Original Design** |**My solution**
-:-------------------------:|:-------------------------:
-![mobile-design](https://user-images.githubusercontent.com/29714385/94368818-f9513f80-00ee-11eb-89a0-00f4a8b21413.jpg)  |![another](https://user-images.githubusercontent.com/29714385/94368990-dffcc300-00ef-11eb-960f-06940d199976.jpg)
-# Test the component
-https://social-proof-section-8a614.web.app/
+## [Live Demo](https://social-proof-section-8a614.web.app/)
 

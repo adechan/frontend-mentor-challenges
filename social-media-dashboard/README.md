@@ -1,5 +1,7 @@
 # Social Media Dashboard
 
+![desktop-preview](https://user-images.githubusercontent.com/29714385/94529964-11d26e80-0243-11eb-9ab4-f6d9e0d56ac4.jpg)
+
 
 ## The challenge
 
@@ -13,10 +15,5 @@ Your users should be able to:
 - See hover states for all interactive elements on the page
 - Toggle color theme to their preference
 
-# Desktop Version
-**The Original Design**: 
-![desktop-preview](https://user-images.githubusercontent.com/29714385/94529964-11d26e80-0243-11eb-9ab4-f6d9e0d56ac4.jpg)
-
-# Test the component
-https://social-media-dashboard-f439f.web.app/
+## [Live Demo](https://social-media-dashboard-f439f.web.app/)
 
