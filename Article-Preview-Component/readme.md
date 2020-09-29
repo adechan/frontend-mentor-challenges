@@ -1,4 +1,5 @@
 # Article Preview Component
+![3](https://user-images.githubusercontent.com/29714385/94535918-cc19a400-024a-11eb-9fa5-b601e2ec3b41.jpg)
 
 ## The challenge
 
@@ -13,17 +14,4 @@ Your users should be able to:
 - View the optimal layout for the component depending on their device's screen size
 - See the social media share links when they click the share icon
 
-# Desktop Version
-**The Original Design**: 
-![desktop-design](https://user-images.githubusercontent.com/29714385/89296809-8e920380-d66b-11ea-91e3-02102508a1f8.jpg)
-**My solution**: 
-![original1](https://user-images.githubusercontent.com/29714385/89296763-7ae69d00-d66b-11ea-83e0-d90664d41f4d.PNG)
-
-# Mobile Version
-**The Original Design** |**My solution**
-:-------------------------:|:-------------------------:
-![mobile-design](https://user-images.githubusercontent.com/29714385/89296683-568ac080-d66b-11ea-87db-39609867b831.jpg)  |  ![dasdas](https://user-images.githubusercontent.com/29714385/89328740-7e434e00-d696-11ea-9fc2-5dc3ccf34d24.png)
-
-
-# Test the component
-https://adechan.github.io/Frontend-Mentor-Challenges/Article-Preview-Component/
+## [Live Demo](https://adechan.github.io/Frontend-Mentor-Challenges/Article-Preview-Component/)
