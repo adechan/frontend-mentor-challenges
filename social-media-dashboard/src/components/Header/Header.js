@@ -1,10 +1,11 @@
 import React from "react";
 import { useDataLayerValue } from "../../DataLayer";
+import { getTotalFollowers } from "../../reducer";
 import SwitchSlider from "../SwitchSlider/SwitchSlider";
 import "./Header.css";
 
 function Header() {
-  const [{ isDarkMode, totalFollowers }, dispatch] = useDataLayerValue();
+  const [{ isDarkMode, listOfFollowers }, dispatch] = useDataLayerValue();
 
   return (
     <div
@@ -24,7 +25,9 @@ function Header() {
         >
           Social Media Dashboard
         </h3>
-        <p className="header__followers">Total Followers: 23,004</p>
+        <p className="header__followers">
+          Total Followers: {getTotalFollowers(listOfFollowers)}
+        </p>
       </div>
 
       <SwitchSlider />

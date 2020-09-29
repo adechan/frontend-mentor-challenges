@@ -2,6 +2,7 @@ import React from "react";
 import ArrowUp from "../../assets/icon-up.svg";
 import ArrowDown from "../../assets/icon-down.svg";
 import { useDataLayerValue } from "../../DataLayer";
+import { convertValue } from "../../reducer";
 import "./OverviewCard.css";
 
 function OverviewCard({
@@ -31,7 +32,7 @@ function OverviewCard({
             isDarkMode ? "overviewCard__countDark" : "overviewCard__countLight"
           }
         >
-          {count}
+          {convertValue(count)}
         </h1>
 
         {increasedPercent != 0 ? (

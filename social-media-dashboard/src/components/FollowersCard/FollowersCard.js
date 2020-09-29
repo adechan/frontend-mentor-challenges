@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import ArrowUp from "../../assets/icon-up.svg";
 import ArrowDown from "../../assets/icon-down.svg";
 import { useDataLayerValue } from "../../DataLayer";
+import { convertValue } from "../../reducer";
 import "./FollowersCard.css";
 
 function FollowersCard({
@@ -11,7 +12,14 @@ function FollowersCard({
   increasedToday,
   decreasedToday,
 }) {
-  const [{ isDarkMode }, dispatch] = useDataLayerValue();
+  const [{ isDarkMode, listOfFollowers }, dispatch] = useDataLayerValue();
+
+  useEffect(() => {
+    dispatch({
+      type: "SET_LIST_OF_FOLLOWERS",
+      listOfFollowers: followers,
+    });
+  }, []);
 
   return (
     <div
@@ -33,7 +41,7 @@ function FollowersCard({
               : "followersCard__followersCountLight"
           }
         >
-          {followers}
+          {convertValue(followers)}
         </h1>
         <p>FOLLOWERS</p>
       </div>

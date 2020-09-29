@@ -61,9 +61,9 @@
   background-color: #b1b3cc;
 }
 
-.switch__sliderDark:hover {
+/* .switch__sliderDark:hover {
   background-image: linear-gradient(to right, #b1b3cc, white);
-}
+} */
 
 .switch__sliderLight:hover {
   background-image: linear-gradient(

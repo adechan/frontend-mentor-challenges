@@ -1,7 +1,22 @@
 export const initialState = {
   isDarkMode: true,
-  totalFollowers: 0,
+  listOfFollowers: [],
 };
+
+export const getTotalFollowers = (listOfFollowers) =>
+  listOfFollowers?.reduce(
+    (accumulator, currentValue) => accumulator + currentValue,
+    0
+  );
+
+export function convertValue(value) {
+  if (value >= 1000000) {
+    value = value / 1000000 + "M";
+  } else if (value >= 10000) {
+    value = value / 1000 + "K";
+  }
+  return value;
+}
 
 const reducer = (state, action) => {
   console.log(action);
@@ -13,11 +28,10 @@ const reducer = (state, action) => {
         ...state,
         isDarkMode: action.isDarkMode,
       };
-    case "SET_TOTAL_FOLLOWERS":
-      console.log(initialState.totalFollowers);
+    case "SET_LIST_OF_FOLLOWERS":
       return {
         ...state,
-        totalFollowers: action.totalFollowers,
+        listOfFollowers: [...state.listOfFollowers, action.listOfFollowers],
       };
 
     default:
