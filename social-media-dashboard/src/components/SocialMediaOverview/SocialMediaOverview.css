@@ -6,6 +6,7 @@
 .socialMediaOverview__title {
   padding-top: 4vh;
   padding-bottom: 4vh;
+  font-size: 25px;
 }
 
 .socialMediaOverview__titleDark {
@@ -23,4 +24,10 @@
 
   justify-content: space-evenly;
   padding-bottom: 10vh;
+}
+
+@media (max-width: 550px) {
+  .socialMediaOverview__title {
+    font-size: 1.2em;
+  }
 }
