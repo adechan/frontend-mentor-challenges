@@ -1,5 +1,10 @@
 # Base Apparel Coming Soon Page
 
+
+![4](https://user-images.githubusercontent.com/29714385/94536077-fff4c980-024a-11eb-8814-1d76f7c1138c.jpg)
+
+
+
 ## The challenge
 
 Your challenge is to build out this coming soon page and get it looking as close to the design as possible.
@@ -14,17 +19,4 @@ Your users should be able to:
   - The `input` field is empty
   - The email address is not formatted correctly
 
-# Desktop Version
-**The Original Design**: 
-![desktop-design](https://user-images.githubusercontent.com/29714385/91660267-04a84f80-eade-11ea-8dfa-727a7e15129e.jpg)
-**My solution**: 
-![1](https://user-images.githubusercontent.com/29714385/91660305-3ae5cf00-eade-11ea-85b7-877252b8e4f3.PNG)
-
-# Mobile Version
-**The Original Design** |**My solution**
-:-------------------------:|:-------------------------:
-![mobile-design](https://user-images.githubusercontent.com/29714385/91660275-0e31b780-eade-11ea-900c-bb9b2526344c.jpg)  |  ![2](https://user-images.githubusercontent.com/29714385/91660482-e5f68880-eade-11ea-9363-fcbf1aed377b.PNG)
-
-
-# Test the component
-https://adechan.github.io/Frontend-Mentor-Challenges/Base-Apparel-Coming-Soon-Page/
+## [Live Demo](https://adechan.github.io/Frontend-Mentor-Challenges/Base-Apparel-Coming-Soon-Page/)
