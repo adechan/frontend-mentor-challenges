@@ -5,6 +5,8 @@ import { useDataLayerValue } from "../../DataLayer";
 import { convertValue } from "../../reducer";
 import "./FollowersCard.css";
 
+import InstagramIcon from "../../assets/icon-instagram.svg";
+
 function FollowersCard({
   icon,
   borderColour,
@@ -26,7 +28,12 @@ function FollowersCard({
     <div
       className={
         "followersCard " +
-        (isDarkMode ? "followersCard__dark" : "followersCard__light")
+        (isDarkMode ? "followersCard__dark " : "followersCard__light ") +
+        (icon === InstagramIcon
+          ? isDarkMode
+            ? "instagramDark"
+            : "instagramLight"
+          : "others")
       }
       style={{ borderTopColor: borderColour }}
     >

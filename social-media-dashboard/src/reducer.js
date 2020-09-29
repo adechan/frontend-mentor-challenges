@@ -13,7 +13,7 @@ export function convertValue(value) {
   if (value >= 1000000) {
     value = value / 1000000 + "M";
   } else if (value >= 10000) {
-    value = value / 1000 + "K";
+    value = value / 1000 + "k";
   }
   return value;
 }

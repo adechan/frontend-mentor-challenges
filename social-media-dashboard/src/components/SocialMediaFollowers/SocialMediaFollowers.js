@@ -28,7 +28,7 @@ function SocialMediaFollowers() {
       />
       <FollowersCard
         icon={InstagramIcon}
-        borderColour="hsl(329, 70%, 58%)"
+        borderColour="linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%))"
         account="realnathanf"
         followers={11000}
         increasedToday={1099}
