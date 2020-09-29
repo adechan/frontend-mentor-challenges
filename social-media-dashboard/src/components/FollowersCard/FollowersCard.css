@@ -1,12 +1,15 @@
 .followersCard {
   min-width: 260px;
-  height: 230px;
-  margin-bottom: 10px;
+  min-height: 230px;
+
+  width: 20%;
+  height: 20vh;
+  margin-bottom: 20px;
   margin-right: 10px;
 
   border-radius: 10px;
   background-color: #252b43;
-  border-top: 3px solid #178ff5;
+  border-top: 3px solid;
 
   display: flex;
   flex-direction: column;

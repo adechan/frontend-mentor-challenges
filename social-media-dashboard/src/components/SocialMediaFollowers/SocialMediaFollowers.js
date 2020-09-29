@@ -12,6 +12,7 @@ function SocialMediaFollowers() {
     <div className="socialMediaFollowers">
       <FollowersCard
         icon={FacebookIcon}
+        borderColour="hsl(208, 92%, 53%)"
         account="nathanf"
         followers={1987}
         increasedToday={12}
@@ -19,6 +20,7 @@ function SocialMediaFollowers() {
       />
       <FollowersCard
         icon={TwitterIcon}
+        borderColour="hsl(203, 89%, 53%)"
         account="nathanf"
         followers={1044}
         increasedToday={99}
@@ -26,6 +28,7 @@ function SocialMediaFollowers() {
       />
       <FollowersCard
         icon={InstagramIcon}
+        borderColour="hsl(329, 70%, 58%)"
         account="realnathanf"
         followers={11000}
         increasedToday={1099}
@@ -33,6 +36,7 @@ function SocialMediaFollowers() {
       />
       <FollowersCard
         icon={YoutubeIcon}
+        borderColour="hsl(348, 97%, 39%)"
         account="Nathan F."
         followers={8239}
         increasedToday={0}

@@ -7,12 +7,13 @@ import "./FollowersCard.css";
 
 function FollowersCard({
   icon,
+  borderColour,
   account,
   followers,
   increasedToday,
   decreasedToday,
 }) {
-  const [{ isDarkMode, listOfFollowers }, dispatch] = useDataLayerValue();
+  const [{ isDarkMode }, dispatch] = useDataLayerValue();
 
   useEffect(() => {
     dispatch({
@@ -27,6 +28,7 @@ function FollowersCard({
         "followersCard " +
         (isDarkMode ? "followersCard__dark" : "followersCard__light")
       }
+      style={{ borderTopColor: borderColour }}
     >
       <div className="followersCard__app">
         <img src={icon} alt="" />
