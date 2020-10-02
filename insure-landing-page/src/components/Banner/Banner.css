@@ -1,0 +1,98 @@
+.banner {
+  color: white;
+
+  height: 100vh;
+  display: flex;
+  position: relative;
+}
+
+.banner:after {
+  content: "";
+  position: absolute;
+
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 100%;
+  background-image: url("../../assets/bg-pattern-intro-right-desktop.svg");
+  background-repeat: no-repeat;
+  background-position: top -80px right;
+}
+
+.banner__info {
+  padding-left: 20vh;
+  padding-right: 19vh;
+  display: flex;
+  flex-direction: row;
+  background-color: hsl(256, 26%, 20%);
+
+  height: 85%;
+  width: 100vw;
+  align-items: center;
+}
+
+.banner__info > img {
+  margin-top: 30vh;
+  padding-right: 1vh;
+  object-fit: contain;
+  height: 100%;
+  width: 100%;
+}
+
+.banner__description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.banner__description > p {
+  padding-top: 2vh;
+  padding-right: 15vh;
+  font-weight: 700;
+  font-family: "Karla", serif;
+  color: #b7b4bd;
+  font-size: 15px;
+  line-height: 25px;
+}
+
+.banner__description > p:last-child {
+  margin-top: 3vh;
+  font-size: 14px;
+  color: #b7b4bd;
+  font-weight: 700;
+  letter-spacing: 1px;
+
+  padding: 8px;
+  padding-left: 30px;
+  padding-right: 30px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: #b7b4bd;
+  width: 100px;
+  border: 3px solid #b7b4bd;
+  cursor: pointer;
+
+  z-index: 100;
+}
+
+.banner__description > p:last-child:hover {
+  color: black;
+  background-color: #b7b4bd;
+}
+
+.banner__line {
+  border-top: 2px solid #b7b4bd;
+  margin-bottom: 5vh;
+  margin-top: 1vh;
+  width: 3vw;
+}
+
+.banner__description h3 {
+  font-family: "DM Serif Display", serif;
+  font-size: 4.5em;
+  margin-right: 15vh;
+  line-height: 70px;
+}

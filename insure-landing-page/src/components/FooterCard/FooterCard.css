@@ -1,0 +1,28 @@
+.footerCard {
+  font-family: "Karla", serif;
+  font-weight: 700;
+  margin-right: 25vh;
+}
+
+.footerCard p {
+  letter-spacing: 2px;
+  font-size: 13px;
+}
+
+.footerCard > p {
+  color: hsl(273, 4%, 51%);
+}
+
+.footerCard > p {
+  margin-bottom: 5vh;
+}
+
+.footerCard__links {
+  line-height: 30px;
+  color: #3c393e;
+  cursor: pointer;
+}
+
+.footerCard__links > p:hover {
+  text-decoration: underline;
+}

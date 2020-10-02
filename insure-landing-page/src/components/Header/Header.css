@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Karla", serif;
+  font-weight: 700;
+
+  padding-left: 20vh;
+  padding-right: 20vh;
+  padding-bottom: 2vh;
+}
+
+.header > img {
+  object-fit: contain;
+  width: 120px;
+}
+
+.header__links {
+  display: flex;
+  align-items: center;
+}
+
+.header__links > p {
+  margin-right: 2vw;
+  font-size: 14px;
+  color: #98969c;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+.header__links > p:hover {
+  color: black;
+}
+
+.header__links > p:last-child {
+  width: 100px;
+  padding: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: black;
+  border: 3px solid black;
+}
+
+.header__links > p:last-child:hover {
+  background-color: black;
+  color: white;
+}

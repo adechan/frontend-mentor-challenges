@@ -1,0 +1,48 @@
+.footer {
+  height: 50vh;
+  background-color: #fafafa;
+
+  padding-left: 20vh;
+  padding-right: 20vh;
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: space-evenly;
+  align-items: flex-start;
+
+  background-image: url("../../assets/bg-pattern-footer-desktop.svg");
+  background-repeat: no-repeat;
+  background-position: top 0 left;
+}
+
+.footer__line {
+  border-top: 1px solid #b7b4bd;
+  width: 100%;
+  margin-top: -5vh;
+  margin-bottom: -2vh;
+}
+
+.footer__description > img {
+  object-fit: contain;
+}
+
+.footer__description {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.footer__socials > img {
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.footer__socials > img:last-child {
+  margin-right: 0px;
+}
+
+.footer__cards {
+  width: 100%;
+  display: flex;
+}

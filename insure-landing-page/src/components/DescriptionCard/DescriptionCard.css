@@ -1,0 +1,34 @@
+.descriptionCard {
+  padding: 20px;
+
+  height: 30%;
+  width: 22%;
+  background-color: white;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.descriptionCard > img {
+  object-fit: contain;
+}
+
+.descriptionCard h3 {
+  font-family: "DM Serif Display", serif;
+  font-size: 2em;
+  font-weight: 400;
+  color: #3c393e;
+
+  margin-bottom: 3vh;
+  margin-top: 5vh;
+}
+
+.descriptionCard p {
+  font-weight: 700;
+  font-family: "Karla", serif;
+  color: hsl(0, 0%, 59%);
+  font-size: 0.9em;
+  line-height: 25px;
+}

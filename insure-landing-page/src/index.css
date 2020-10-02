@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}

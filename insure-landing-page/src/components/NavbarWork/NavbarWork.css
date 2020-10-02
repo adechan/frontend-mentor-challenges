@@ -1,0 +1,53 @@
+.navbarWork {
+  height: 50vh;
+
+  padding-left: 20vh;
+  padding-right: 20vh;
+}
+
+.navbarWork__info {
+  height: 60%;
+  padding-left: 10vh;
+  padding-right: 10vh;
+  background-color: hsl(256, 26%, 20%);
+  color: white;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  line-height: 60px;
+  background-image: url("../../assets/bg-pattern-how-we-work-desktop.svg");
+  background-repeat: no-repeat;
+  background-position: top right;
+}
+
+.navbarWork__info h3 {
+  font-family: "DM Serif Display", serif;
+  font-size: 3.5em;
+  font-weight: 400;
+  color: white;
+  width: 500px;
+}
+
+.navbarWork__info p {
+  font-size: 14px;
+  font-family: "Karla", serif;
+  cursor: pointer;
+  letter-spacing: 1px;
+  height: 40px;
+  padding-left: 30px;
+  padding-right: 30px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: white;
+  border: 3px solid white;
+}
+
+.navbarWork__info p:hover {
+  color: hsl(256, 26%, 20%);
+  background-color: white;
+  border: 3px solid hsl(256, 26%, 20%);
+}
