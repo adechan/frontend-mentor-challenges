@@ -57,7 +57,7 @@
 }
 
 .header__linksOpen > p:hover {
-  color: black;
+  color: lightgray;
 }
 
 .header__linksOpen > p:last-child {
