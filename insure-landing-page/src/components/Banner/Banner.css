@@ -103,7 +103,6 @@
 
 @media (max-width: 1200px) {
   .banner__description h3 {
-    /* font-family: "DM Serif Display", serif; */
     font-size: 3.5em;
     /* margin-right: 15vh; */
   }
@@ -114,7 +113,7 @@
   }
 
   .banner__description > p {
-    padding-right: 5vh;
+    padding-right: 10vh;
   }
 }
 

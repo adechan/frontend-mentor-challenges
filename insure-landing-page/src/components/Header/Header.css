@@ -20,11 +20,12 @@
   font-family: "Karla", serif;
   font-weight: 700;
 
-  padding-left: 5vh;
-  padding-right: 5vh;
+  padding-left: 10vh;
+  padding-right: 10vh;
   padding-bottom: 95vh;
 
   position: relative;
+  pointer-events: all;
 }
 
 .header__linksOpen {
@@ -44,6 +45,8 @@
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: bottom;
+
+  pointer-events: all;
 }
 
 .header__linksOpen > p {
@@ -81,7 +84,7 @@
   width: 120px;
 }
 
-.header > img {
+.header__open > img {
   object-fit: contain;
   width: 120px;
 }
@@ -89,6 +92,13 @@
 .header > .header__menu {
   width: 30px !important;
   cursor: pointer;
+  pointer-events: all;
+}
+
+.header__menuOpen > .header__menu {
+  width: 30px !important;
+  cursor: pointer;
+  pointer-events: all;
 }
 
 .header__links {
@@ -132,10 +142,20 @@
     padding-left: 5vh;
     padding-right: 5vh;
   }
+
+  .header__open {
+    padding-left: 5vh;
+    padding-right: 5vh;
+  }
 }
 
 @media (max-width: 1200px) {
   .header {
+    padding-left: 10vh;
+    padding-right: 10vh;
+  }
+
+  .header__open {
     padding-left: 10vh;
     padding-right: 10vh;
   }
