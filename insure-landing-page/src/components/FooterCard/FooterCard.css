@@ -26,3 +26,21 @@
 .footerCard__links > p:hover {
   text-decoration: underline;
 }
+
+@media (max-width: 701px) {
+  .footerCard {
+    margin-right: 0vh;
+    margin-top: 5vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+  }
+
+  .footerCard__links {
+    line-height: 25px;
+  }
+}
