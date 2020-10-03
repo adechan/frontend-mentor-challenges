@@ -1,10 +1,14 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./Banner.css";
 import BannerImage from "../../assets/image-intro-desktop.jpg";
 
-function Banner() {
+function Banner({ mobile }) {
   return (
     <div className="banner">
+      {mobile ? (
+        <img className="banner__imageMobile" src={BannerImage} alt="" />
+      ) : null}
+
       <div className="banner__info">
         <div className="banner__description">
           <p className="banner__line"></p>
@@ -18,7 +22,7 @@ function Banner() {
           <p>VIEW PLANS</p>
         </div>
 
-        <img src={BannerImage} alt="" />
+        {mobile ? null : <img src={BannerImage} alt="" />}
       </div>
     </div>
   );

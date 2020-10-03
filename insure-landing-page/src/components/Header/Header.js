@@ -4,25 +4,8 @@ import Logo from "../../assets/logo.svg";
 import MenuIcon from "../../assets/icon-hamburger.svg";
 import CloseIcon from "../../assets/icon-close.svg";
 
-function Header() {
-  const [mobileLinks, setMobileLinks] = useState(false);
+function Header({ mobile }) {
   const [open, setOpen] = useState(false);
-
-  useEffect(() => {
-    if (window.innerWidth <= 700) {
-      setMobileLinks(true);
-    } else {
-      setMobileLinks(false);
-    }
-
-    window.onresize = () => {
-      if (window.outerWidth <= 700) {
-        setMobileLinks(true);
-      } else {
-        setMobileLinks(false);
-      }
-    };
-  }, []);
 
   const handleOpen = () => {
     if (open === true) {
@@ -34,12 +17,10 @@ function Header() {
 
   return (
     <div
-      className={
-        open === true && mobileLinks === true ? "header__open" : "header"
-      }
+      className={open === true && mobile === true ? "header__open" : "header"}
     >
       <img src={Logo} alt="" />
-      {mobileLinks ? (
+      {mobile ? (
         open ? (
           <div className="header__menuOpen">
             <img
