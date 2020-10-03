@@ -86,17 +86,17 @@
 
     flex-direction: column;
     justify-content: space-evenly;
-    line-height: 40px;
+    line-height: 30px;
     background-image: url("../../assets/bg-pattern-how-we-work-mobile.svg");
   }
 
   .navbarWork__info h3 {
-    font-size: 2.3em;
+    font-size: 6vw;
     text-align: center;
     width: 100%;
   }
 
   .navbarWork__info p {
-    font-size: 13px;
+    font-size: 3vw;
   }
 }

@@ -41,7 +41,13 @@
     align-items: center;
   }
 
+  .descriptionCard h3 {
+    font-size: 6vw;
+  }
+
   .descriptionCard p {
     text-align: center;
+    font-size: 3.3vw;
+    line-height: 20px;
   }
 }
