@@ -112,6 +112,7 @@
   color: #98969c;
   letter-spacing: 1px;
   cursor: pointer;
+  z-index: 1000;
 }
 
 .header__links > p:hover {
