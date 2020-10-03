@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import "./Banner.css";
 import BannerImage from "../../assets/image-intro-desktop.jpg";
 

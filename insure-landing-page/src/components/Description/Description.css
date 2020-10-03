@@ -52,6 +52,7 @@
 @media (max-width: 500px) {
   .description {
     padding-right: 5vh;
+    padding-left: 5vh;
   }
 }
 
@@ -63,7 +64,7 @@
     padding-bottom: 20vh;
 
     padding-left: 5vh;
-    padding-right: -10vh;
+    /* padding-right: -10vh; */
     align-items: center;
     position: relative;
   }
