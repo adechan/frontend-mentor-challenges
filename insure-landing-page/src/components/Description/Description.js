@@ -6,7 +6,7 @@ import SnappyProcessLogo from "../../assets/icon-snappy-process.svg";
 import AffortablePricesLogo from "../../assets/icon-affordable-prices.svg";
 import PeopleFirstLogo from "../../assets/icon-people-first.svg";
 
-function Description() {
+function Description({ mobile }) {
   return (
     <div className="description">
       <div className="description__header">
