@@ -1,9 +1,6 @@
 # Insure Landing Page
 ![desktop-preview](https://user-images.githubusercontent.com/29714385/94993409-82f28880-0599-11eb-8981-92af7b814022.jpg)
 
-
-## The challenge
-
 ## The challenge
 
 Your challenge is to build out this landing page and get it looking as close to the design as possible.
