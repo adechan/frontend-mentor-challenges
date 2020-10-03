@@ -39,5 +39,11 @@ Your users should be able to:
     }
     ```
  * To pass an array in props use *{[element_a, element_b]}*
+ * You can have *null* in conditional rendering 
+   ```
+     {
+         mobile ? (<img className="banner__imageMobile" src={BannerImage} alt="" />) : null
+     }
+   ```
 
 ## [Live Demo](https://insure-landing-page.web.app/)
