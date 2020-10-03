@@ -9,14 +9,14 @@ function App() {
   const [mobileLinks, setMobileLinks] = useState(false);
 
   useEffect(() => {
-    if (window.innerWidth <= 700) {
+    if (window.innerWidth <= 771) {
       setMobileLinks(true);
     } else {
       setMobileLinks(false);
     }
 
     window.onresize = () => {
-      if (window.outerWidth <= 700) {
+      if (window.outerWidth <= 771) {
         setMobileLinks(true);
       } else {
         setMobileLinks(false);

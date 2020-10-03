@@ -47,7 +47,19 @@
   display: flex;
 }
 
-@media (max-width: 701px) {
+@media (max-width: 1200px) {
+  .footer {
+    padding-left: 10vh;
+    padding-right: 10vh;
+  }
+
+  .footer__line {
+    margin-top: 3vh;
+    margin-bottom: 2vh;
+  }
+}
+
+@media (max-width: 771px) {
   .footer {
     height: 100%;
 

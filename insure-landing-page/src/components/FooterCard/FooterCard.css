@@ -27,7 +27,13 @@
   text-decoration: underline;
 }
 
-@media (max-width: 701px) {
+@media (max-width: 1000px) {
+  .footerCard {
+    margin-right: 10vh;
+  }
+}
+
+@media (max-width: 771px) {
   .footerCard {
     margin-right: 0vh;
     margin-top: 5vh;

@@ -52,7 +52,26 @@
   border: 3px solid hsl(256, 26%, 20%);
 }
 
-@media (max-width: 701px) {
+@media (max-width: 1200px) {
+  .navbarWork {
+    padding-left: 10vh;
+    padding-right: 10vh;
+  }
+  .navbarWork__info {
+    line-height: 40px;
+  }
+
+  .navbarWork__info h3 {
+    font-size: 3vw;
+    width: 50%;
+  }
+
+  .navbarWork__info p {
+    font-size: 1.3vw;
+  }
+}
+
+@media (max-width: 771px) {
   .navbarWork {
     height: 75vh;
 
@@ -75,5 +94,9 @@
     font-size: 2.3em;
     text-align: center;
     width: 100%;
+  }
+
+  .navbarWork__info p {
+    font-size: 13px;
   }
 }

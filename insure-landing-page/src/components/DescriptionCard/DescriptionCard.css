@@ -26,14 +26,14 @@
 }
 
 .descriptionCard p {
-  font-weight: 700;
+  font-weight: 400;
   font-family: "Karla", serif;
-  color: hsl(0, 0%, 59%);
+  color: hsl(0, 0%, 45%);
   font-size: 0.9em;
   line-height: 25px;
 }
 
-@media (max-width: 701px) {
+@media (max-width: 771px) {
   .descriptionCard {
     padding: 20px;
     width: 90%;

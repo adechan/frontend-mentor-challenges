@@ -133,3 +133,10 @@
     padding-right: 5vh;
   }
 }
+
+@media (max-width: 1200px) {
+  .header {
+    padding-left: 10vh;
+    padding-right: 10vh;
+  }
+}
