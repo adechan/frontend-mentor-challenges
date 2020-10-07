@@ -29,7 +29,7 @@
   font-weight: 400;
   font-family: "Karla", serif;
   color: hsl(0, 0%, 45%);
-  font-size: 0.9em;
+  font-size: 1em;
   line-height: 25px;
 }
 
@@ -47,7 +47,7 @@
 
   .descriptionCard p {
     text-align: center;
-    font-size: 3.3vw;
+    font-size: 1em;
     line-height: 20px;
   }
 }

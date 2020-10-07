@@ -171,7 +171,7 @@
   }
 
   .banner__description > p {
-    font-size: 2.8vw;
+    font-size: 1em;
   }
 
   .banner__line {
@@ -181,6 +181,6 @@
   .banner__description > p:last-child {
     margin-top: 5vh;
     margin-left: -20%;
-    font-size: 2.3vw;
+    font-size: 2vw;
   }
 }
