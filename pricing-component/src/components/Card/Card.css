@@ -1,12 +1,16 @@
 .card {
-  width: 280px;
-  height: 400px;
+  width: 300px;
+  height: 420px;
   border-radius: 8px;
-  background-color: lightblue;
+  background-color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
+  color: hsl(233, 13%, 49%);
+  font-weight: 700;
+
+  box-shadow: -1px 10px 33px 7px rgba(162, 165, 189, 0.72);
 }
 
 .card__price {
@@ -14,16 +18,16 @@
   flex-direction: row;
 
   align-items: center;
-  font-weight: 700;
+  color: hsl(232, 13%, 33%);
 }
 
 .card__price > p:first-child {
-  font-size: 25px;
+  font-size: 35px;
   margin-right: 5px;
 }
 
 .card__price > p:last-child {
-  font-size: 50px;
+  font-size: 65px;
 }
 
 .card__benefits {
@@ -37,21 +41,31 @@
 }
 
 .card__benefits > p:first-child {
-  border-top: 1px solid gray;
+  border-top: 1px solid hsl(234, 14%, 74%);
 }
 
 .card__benefits > p {
   padding: 11px;
-  padding-left: 40px;
-  padding-right: 40px;
+  padding-left: 60px;
+  padding-right: 60px;
 
-  border-bottom: 1px solid gray;
+  font-size: 13px;
+
+  border-bottom: 1px solid hsl(234, 14%, 74%);
 }
 
 .card__learnMore {
   padding: 11px;
+  border-radius: 5px;
   width: 70%;
   display: flex;
   justify-content: center;
-  background-color: pink;
+  background-image: linear-gradient(
+    to right,
+    hsl(236, 72%, 79%),
+    hsl(237, 63%, 64%)
+  );
+  color: white;
+  font-size: 11px;
+  letter-spacing: 1px;
 }

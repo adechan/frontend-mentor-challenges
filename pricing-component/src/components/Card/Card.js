@@ -15,7 +15,7 @@ function Card() {
         <p>Send up to 3 GB</p>
       </div>
 
-      <p className="card__learnMore">Learn More</p>
+      <p className="card__learnMore">LEARN MORE</p>
     </div>
   );
 }
