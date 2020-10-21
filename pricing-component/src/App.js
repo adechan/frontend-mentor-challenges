@@ -2,15 +2,18 @@ import React from "react";
 // import { Counter } from "./features/counter/Counter";
 import "./App.css";
 import Card from "./components/Card/Card";
+import SwitchSlider from "./components/SwitchSlider/SwitchSlider";
 
 function App() {
   return (
     <div className="app">
-      <h2 className="app__title">Our Pricing</h2>
-      <div className="app__options">
-        <p>Annually</p>
-        {/* Toggler */}
-        <p>Monthly</p>
+      <div className="app__title">
+        <h2>Our Pricing</h2>
+        <div className="app__options">
+          <p>Annually</p>
+          <SwitchSlider />
+          <p>Monthly</p>
+        </div>
       </div>
 
       <div className="app__cards">

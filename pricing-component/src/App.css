@@ -6,10 +6,23 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  font-weight: 700;
 }
 
-.app__options {
+.app__title > .app__options {
   display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: hsl(234, 14%, 74%);
+  padding-bottom: 7vh;
+  font-size: 13px;
+}
+
+.app__title > h2 {
+  padding-bottom: 3vh;
+  font-size: 30px;
+  color: hsl(233, 13%, 49%);
 }
 
 .app__cards {
