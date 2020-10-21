@@ -1,12 +1,14 @@
 .app {
   height: 100vh;
-  background-color: #f7f7ff;
 
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   font-weight: 700;
+
+  background: url("./assets/bg-top.svg") top right no-repeat,
+    url("./assets/bg-bottom.svg") bottom left no-repeat, #f7f7ff;
 }
 
 .app__title > .app__options {
