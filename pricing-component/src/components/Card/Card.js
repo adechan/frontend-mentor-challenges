@@ -1,18 +1,18 @@
 import React from "react";
 import "./Card.css";
 
-function Card() {
+function Card({ title, price, storage, users, sendGB, large }) {
   return (
-    <div className="card">
-      <h3>Basic</h3>
+    <div className={"card " + (large ? "large" : null)}>
+      <h3>{title}</h3>
       <p className="card__price">
         <p>$</p>
-        <p>19.99</p>
+        <p>{price}</p>
       </p>
       <div className="card__benefits">
-        <p>500 GB Storage</p>
-        <p>2 Users Allowed</p>
-        <p>Send up to 3 GB</p>
+        <p>{storage} Storage</p>
+        <p>{users} Users Allowed</p>
+        <p>Send up to {sendGB} GB</p>
       </div>
 
       <p className="card__learnMore">LEARN MORE</p>

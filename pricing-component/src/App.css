@@ -1,4 +1,19 @@
 .app {
   height: 100vh;
-  background-color: lightgray;
+  background-color: #f7f7ff;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.app__options {
+  display: flex;
+}
+
+.app__cards {
+  display: flex;
+
+  align-items: center;
 }
