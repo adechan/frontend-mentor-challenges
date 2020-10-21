@@ -29,6 +29,27 @@
 
 .app__cards {
   display: flex;
-
   align-items: center;
+}
+
+@media (max-width: 1025px) {
+  .app {
+    height: 100%;
+    padding-top: 7vh;
+    padding-bottom: 7vh;
+  }
+
+  .app__cards {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 375px) {
+  .app {
+    background-color: #f7f7ff;
+    background-image: url("./assets/bg-top.svg");
+    background-position: 330% 0%;
+    background-size: 80%;
+    background-repeat: no-repeat;
+  }
 }
