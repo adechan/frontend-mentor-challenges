@@ -1,12 +1,22 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./SwitchSlider.css";
 
 function SwitchSlider() {
+  const [checked, setCkecked] = useState(true);
+
+  useEffect(() => {
+    console.log(checked);
+  }, [checked]);
+
   return (
     <div className="switchSlider">
-      <label class="switchSlider__switch">
-        <input type="checkbox" />
-        <span class="switchSlider__slider round"></span>
+      <label className="switchSlider__switch">
+        <input
+          type="checkbox"
+          checked={checked}
+          onChange={() => setCkecked(!checked)}
+        />
+        <span className="switchSlider__slider round"></span>
       </label>
     </div>
   );
