@@ -44,7 +44,7 @@
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 376px) {
   .app {
     background-color: #f7f7ff;
     background-image: url("./assets/bg-top.svg");
