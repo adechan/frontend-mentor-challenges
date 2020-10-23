@@ -20,6 +20,10 @@
     height: 450px;
     margin-bottom: 3vh;
   }
+
+  .card {
+    box-shadow: 0px 10px 25px -5px #d5d5df !important;
+  }
 }
 
 @media (max-width: 375px) {
