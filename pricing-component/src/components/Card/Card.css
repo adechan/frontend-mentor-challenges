@@ -147,3 +147,18 @@
   /* to get rid of the effect that moves everything up */
   padding: 10px;
 }
+
+/* Fix font size for 320px mobiles */
+@media (max-width: 321px) {
+  .card__price > p:first-child {
+    font-size: 7vw;
+  }
+
+  .card__price > p:last-child {
+    font-size: 15vw;
+  }
+
+  .card__benefits > p {
+    font-size: 3.3vw;
+  }
+}
