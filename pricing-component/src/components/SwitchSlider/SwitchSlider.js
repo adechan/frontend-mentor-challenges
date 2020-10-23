@@ -18,7 +18,7 @@ function SwitchSlider() {
   return (
     <div className="switchSlider">
       <label className="switchSlider__switch">
-        <input type="checkbox" checked={isAnnually} onChange={handleClick} />
+        <input type="checkbox" checked={!isAnnually} onChange={handleClick} />
         <span className="switchSlider__slider round"></span>
       </label>
     </div>
