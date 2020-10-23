@@ -1,11 +1,6 @@
 import React, { useState } from "react";
-import { useDispatch, useSelector } from "react-redux";
-import {
-  selectValue,
-  selectPrices,
-  setAnnually,
-  selectIsAnnually,
-} from "../../features/app/appSlice";
+import { useDispatch } from "react-redux";
+import { setAnnually } from "../../features/app/appSlice";
 import "./SwitchSlider.css";
 
 function SwitchSlider() {

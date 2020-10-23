@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
-// import { Counter } from "./features/counter/Counter";
 import "./App.css";
 import Card from "./components/Card/Card";
 import SwitchSlider from "./components/SwitchSlider/SwitchSlider";
@@ -11,7 +10,7 @@ function App() {
   const [prices, setPrices] = useState(["19.99", "24.99", "39.99"]);
 
   useEffect(() => {
-    if (isAnnually == true) {
+    if (isAnnually === true) {
       setPrices(["199.99", "249.99", "399.99"]);
     } else {
       setPrices(["19.99", "24.99", "39.99"]);
