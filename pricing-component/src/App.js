@@ -1,13 +1,28 @@
-import React, { useEffect, useState } from "react";
-import { useSelector } from "react-redux";
+import React, { useCallback, useEffect, useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
 import "./App.css";
 import Card from "./components/Card/Card";
 import SwitchSlider from "./components/SwitchSlider/SwitchSlider";
-import { selectIsAnnually } from "./features/app/appSlice";
+import { selectIsAnnually, setAnnually } from "./features/app/appSlice";
 
 function App() {
   const isAnnually = useSelector(selectIsAnnually);
+  const dispatch = useDispatch();
+
   const [prices, setPrices] = useState(["19.99", "24.99", "39.99"]);
+
+  const handlePress = useCallback(
+    (event) => {
+      if (event.keyCode === 39 || event.keyCode === 37) {
+        dispatch(
+          setAnnually({
+            isAnnually: !isAnnually,
+          })
+        );
+      }
+    },
+    [isAnnually, dispatch]
+  );
 
   useEffect(() => {
     if (isAnnually === true) {
@@ -15,7 +30,13 @@ function App() {
     } else {
       setPrices(["19.99", "24.99", "39.99"]);
     }
-  }, [isAnnually]);
+
+    window.addEventListener("keydown", handlePress);
+
+    return () => {
+      window.removeEventListener("keydown", handlePress);
+    };
+  }, [isAnnually, handlePress]);
 
   return (
     <div className="app">
