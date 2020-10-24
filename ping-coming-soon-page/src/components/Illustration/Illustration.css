@@ -1,0 +1,12 @@
+.illustration {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 5vh;
+}
+
+.illustration > img {
+  object-fit: contain;
+  width: 500px;
+}

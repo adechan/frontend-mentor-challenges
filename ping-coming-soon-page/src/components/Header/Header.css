@@ -1,0 +1,36 @@
+.header {
+  padding-top: 7vh;
+  padding-bottom: 5vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header > img {
+  padding-bottom: 3vh;
+  object-fit: contain;
+  height: 20px;
+}
+
+.header__title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__title > p:first-child {
+  padding-bottom: 2vh;
+  font-size: 32px;
+  font-weight: 300;
+  color: hsl(0, 0%, 59%);
+}
+
+.header__title > p {
+  color: hsl(209, 33%, 12%);
+}
+
+.header__title strong {
+  color: black;
+}

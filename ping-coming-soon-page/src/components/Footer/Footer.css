@@ -1,0 +1,42 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 3vh;
+}
+
+.footer__icons > .svg-inline--fa:first-child {
+  padding: 6% 9% 6% 9%;
+}
+
+.footer__icons > .svg-inline--fa {
+  padding: 6% 7% 6% 7%;
+  color: #4d7bf3;
+  border: 1px solid hsl(223, 41%, 93%);
+  border-radius: 50%;
+  margin-left: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.footer__icons > .svg-inline--fa:hover {
+  color: white;
+  border: 1px solid #4d7bf3;
+  background-color: #4d7bf3;
+}
+
+.footer__icons {
+  padding: 20px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer > p {
+  font-size: 13px;
+  font-weight: 100;
+  color: hsl(0, 0%, 59%);
+}
