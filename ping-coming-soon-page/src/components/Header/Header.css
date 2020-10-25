@@ -34,3 +34,9 @@
 .header__title strong {
   color: black;
 }
+
+@media (max-width: 500px) {
+  .header {
+    padding-top: 10vh;
+  }
+}

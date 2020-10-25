@@ -40,3 +40,9 @@
   font-weight: 100;
   color: hsl(0, 0%, 59%);
 }
+
+@media (max-width: 500px) {
+  .footer {
+    padding-bottom: 10vh;
+  }
+}

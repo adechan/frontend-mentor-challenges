@@ -60,3 +60,19 @@
   bottom: -20px;
   left: 17px;
 }
+
+@media (max-width: 500px) {
+  .input {
+    flex-direction: column;
+  }
+
+  .input > .input__outer > input {
+    width: 60vw;
+    margin-right: 0px;
+  }
+
+  .input > button {
+    width: 68vw;
+    margin-top: 30px;
+  }
+}

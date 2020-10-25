@@ -10,3 +10,9 @@
   object-fit: contain;
   width: 500px;
 }
+
+@media (max-width: 500px) {
+  .illustration > img {
+    width: 80vw;
+  }
+}
