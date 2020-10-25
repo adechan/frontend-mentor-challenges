@@ -14,9 +14,10 @@ function Input() {
     event.preventDefault();
 
     setEmail(email);
-    if (email === "" || validateEmail(email) === false) {
+    if (email === "") {
+      setError("Whoops! It looks like you forgot to add your email");
+    } else if (validateEmail(email) === false) {
       setError("Please provide a valid email address");
-      console.log(error);
     } else {
       setEmail("");
       setError("");
