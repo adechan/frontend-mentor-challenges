@@ -36,7 +36,30 @@
 }
 
 @media (max-width: 500px) {
+  .header > img {
+    padding-bottom: 5vh;
+    height: 15px;
+  }
+
   .header {
     padding-top: 10vh;
+  }
+
+  .header__title > p:first-child {
+    font-size: 23px;
+  }
+
+  .header__title > p {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 321px) {
+  .header__title > p:first-child {
+    font-size: 19px;
+  }
+
+  .header__title > p {
+    font-size: 12px;
   }
 }
