@@ -3,21 +3,31 @@
   justify-content: center;
   align-items: center;
   padding-bottom: 5vh;
+  position: relative;
 }
 
-.input > input {
+.input.error > .input__outer > input {
+  border: 1px solid hsl(354, 100%, 66%);
+}
+
+.input__outer {
+  position: relative;
+}
+
+.input > .input__outer > input {
   outline: none;
   padding: 10px;
   width: 280px;
   padding-left: 20px;
 
   margin-right: 15px;
+  color: hsl(209, 33%, 12%);
   border: 1px solid hsl(223, 100%, 88%);
   border-radius: 30px;
   text-align: start;
 }
 
-.input > input::placeholder {
+.input > .input__outer > input::placeholder {
   color: hsl(0, 1%, 74%);
 }
 
@@ -39,4 +49,14 @@
 .input > button:hover {
   border: 1px solid #7195f5;
   background-color: #7195f5;
+}
+
+.error_message {
+  position: absolute;
+
+  color: hsl(354, 100%, 66%);
+  font-size: 11px;
+  font-style: italic;
+  bottom: -20px;
+  left: 17px;
 }
