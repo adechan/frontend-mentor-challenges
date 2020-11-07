@@ -1,0 +1,45 @@
+.card {
+  /* change based on card */
+  width: 460px;
+  height: 210px;
+  background-color: #733fc8;
+
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.card__personalInfo {
+  display: flex;
+  align-items: center;
+}
+
+.card__personalInfo > img {
+  width: 27px;
+  height: 27px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.card__name > p:first-child {
+  font-size: 13px;
+  color: hsl(0, 0%, 100%);
+}
+
+.card__name > p:last-child {
+  font-size: 11px;
+  color: hsl(0, 0%, 81%);
+}
+
+.card__description {
+  font-size: 16px;
+  font-weight: 700;
+  color: hsl(0, 0%, 100%);
+}
+
+.card__quote {
+  font-size: 13px;
+  color: hsl(0, 0%, 81%);
+}
