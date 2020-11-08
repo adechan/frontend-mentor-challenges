@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import "./Card.css";
 
 function Card({
-  id,
   image,
   name,
   verified,

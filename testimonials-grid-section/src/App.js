@@ -11,7 +11,7 @@ function App() {
   return (
     <div className="app">
       <Card
-        id="1"
+        key="1"
         image={DanielPic}
         name="Daniel Clifford"
         verified="Verified Graduate"
@@ -30,7 +30,7 @@ function App() {
         background="true"
       />
       <Card
-        id="2"
+        key="2"
         image={JonathanPic}
         name="Jonathan Walters"
         verified="Verified Graduate"
@@ -42,7 +42,7 @@ function App() {
         size="small"
       />
       <Card
-        id="3"
+        key="3"
         image={KiraPic}
         name="Kira Whittle"
         verified="Verified Graduate"
@@ -63,7 +63,7 @@ function App() {
       />
 
       <Card
-        id="4"
+        key="4"
         image={JeanettePic}
         name="Jeanette Harmon"
         verified="Verified Graduate"
@@ -74,7 +74,7 @@ function App() {
         size="small"
       />
       <Card
-        id="5"
+        key="5"
         image={PatrickPic}
         name="Patrick Abrams"
         verified="Verified Graduate"
