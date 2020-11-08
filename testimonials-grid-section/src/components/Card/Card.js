@@ -1,24 +1,51 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./Card.css";
 
-function Card({
-  image,
-  name,
-  verified,
-  description,
-  quote,
-  color,
-  width,
-  height,
-}) {
+function Card({ image, name, verified, description, quote, color, size }) {
+  const [isBackgroundBlue, setIsBackgroundBlue] = useState(false);
+  const [isBackgroundGray, setIsBackgroundGray] = useState(false);
+  const [isBackgroundWhite, setIsBackgroundWhite] = useState(false);
+  const [isBackgroundDarkGray, setIsBackgroundDarkGray] = useState(false);
+
+  const [smallSize, setSmallSize] = useState(false);
+  const [mediumSize, setMediumSize] = useState(false);
+  const [longSize, setLongSize] = useState(false);
+
+  useEffect(() => {
+    if (color === "#733fc8") {
+      setIsBackgroundBlue(true);
+    } else if (color === "#49556b") {
+      setIsBackgroundGray(true);
+    } else if (color === "#ffffff") {
+      setIsBackgroundWhite(true);
+    } else if (color === "#19212e") {
+      setIsBackgroundDarkGray(true);
+    }
+
+    if (size === "small") {
+      setSmallSize(true);
+    } else if (size === "medium") {
+      setMediumSize(true);
+    } else if (size === "long") {
+      setLongSize(true);
+    }
+  }, [color, size]);
+
   return (
     <div
-      className="card"
-      style={{
-        backgroundColor: { color },
-        width: { width },
-        height: { height },
-      }}
+      className={
+        "card " +
+        (isBackgroundBlue
+          ? "backgroundBlue "
+          : isBackgroundDarkGray
+          ? "backgroundDarkGray "
+          : isBackgroundGray
+          ? "backgroundGray "
+          : isBackgroundWhite
+          ? "backgroundWhite "
+          : null) +
+        (smallSize ? "small" : mediumSize ? "medium" : longSize ? "long" : null)
+      }
     >
       <div className="card__personalInfo">
         <img src={image} alt="" />
