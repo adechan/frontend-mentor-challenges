@@ -1,7 +1,16 @@
 import React, { useEffect, useState } from "react";
 import "./Card.css";
 
-function Card({ image, name, verified, description, quote, color, size }) {
+function Card({
+  image,
+  name,
+  verified,
+  description,
+  quote,
+  color,
+  size,
+  background,
+}) {
   const [isBackgroundBlue, setIsBackgroundBlue] = useState(false);
   const [isBackgroundGray, setIsBackgroundGray] = useState(false);
   const [isBackgroundWhite, setIsBackgroundWhite] = useState(false);
@@ -10,6 +19,8 @@ function Card({ image, name, verified, description, quote, color, size }) {
   const [smallSize, setSmallSize] = useState(false);
   const [mediumSize, setMediumSize] = useState(false);
   const [longSize, setLongSize] = useState(false);
+
+  const [backgroundIcon, setBackgroundIcon] = useState(false);
 
   useEffect(() => {
     if (color === "#733fc8") {
@@ -29,7 +40,13 @@ function Card({ image, name, verified, description, quote, color, size }) {
     } else if (size === "long") {
       setLongSize(true);
     }
-  }, [color, size]);
+
+    if (background === "true") {
+      setBackgroundIcon(true);
+    } else {
+      setBackgroundIcon(false);
+    }
+  }, [background, color, size]);
 
   return (
     <div
@@ -44,7 +61,14 @@ function Card({ image, name, verified, description, quote, color, size }) {
           : isBackgroundWhite
           ? "backgroundWhite "
           : null) +
-        (smallSize ? "small" : mediumSize ? "medium" : longSize ? "long" : null)
+        (smallSize
+          ? "small "
+          : mediumSize
+          ? "medium "
+          : longSize
+          ? "long "
+          : null) +
+        (backgroundIcon ? "icon" : null)
       }
     >
       <div className="card__personalInfo">

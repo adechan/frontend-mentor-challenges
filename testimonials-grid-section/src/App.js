@@ -26,6 +26,7 @@ function App() {
         Engineer at a VR startup."
         color="#733fc8"
         size="medium"
+        background="true"
       />
       <Card
         image={JonathanPic}
