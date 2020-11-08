@@ -1,4 +1,11 @@
 .app {
+  height: 100vh;
   background-color: #edf2f8;
   display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: auto auto;
+  align-items: center;
+  justify-content: center;
+
+  grid-gap: 30px;
 }

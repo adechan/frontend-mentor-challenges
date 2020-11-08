@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./Card.css";
 
 function Card({
+  id,
   image,
   name,
   verified,
@@ -68,7 +69,7 @@ function Card({
           : longSize
           ? "long "
           : null) +
-        (backgroundIcon ? "icon" : null)
+        (backgroundIcon ? "icon " : "")
       }
     >
       <div className="card__personalInfo">
