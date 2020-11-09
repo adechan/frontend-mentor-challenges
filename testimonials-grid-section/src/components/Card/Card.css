@@ -5,13 +5,13 @@
   flex-direction: column;
   justify-content: space-evenly;
 
-  box-shadow: 0px 5px 10px 0px hsl(0, 1%, 72%);
+  box-shadow: 0px 5px 10px 0px hsl(0, 0%, 82%);
 }
 
 .card.icon {
   background-image: url("../../assets/bg-pattern-quotation.svg");
   background-repeat: no-repeat;
-  background-position: 90% 0;
+  background-position: 80% 0;
 }
 
 .card.medium {
@@ -56,7 +56,7 @@
 
 .card.backgroundWhite .card__name > p:last-child,
 .card.backgroundWhite .card__quote {
-  color: hsl(0, 0%, 67%);
+  color: hsl(0, 0%, 63%);
 }
 
 .card.backgroundWhite .card__name > p:first-child,
@@ -87,12 +87,12 @@
 
 .card__description {
   font-size: 16px;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .card__quote {
   font-size: 13px;
-  color: hsl(0, 0%, 81%);
+  color: hsl(0, 0%, 75%);
 }
 
 @media (max-width: 1001px) {
@@ -164,7 +164,7 @@
   }
 
   .card.long {
-    height: 400px;
+    height: 350px;
     width: 70vw;
   }
 
