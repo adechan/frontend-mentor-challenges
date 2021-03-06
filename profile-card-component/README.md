@@ -1,4 +1,4 @@
-# Pricing Component
+# Profile Card Component
 
 ![desktop-preview](https://user-images.githubusercontent.com/29714385/110212525-61792e00-7ea4-11eb-8c2d-3d358aa949f2.jpg)
 
